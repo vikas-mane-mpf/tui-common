@@ -1,0 +1,48 @@
+{
+    "rows": [
+        [
+            {
+                "type": "DropDown",
+                "key": "scopedropDownOptions"
+            },
+            {
+                "type": "searchBox"
+            }
+        ],
+        [
+            {
+                "type": "label",
+                "key": "advAccName"
+            },
+            {
+                "type": "DropDown",
+                "key": "sortDropDownOptions"
+            }
+        ],
+        [
+            {
+                "type": "label",
+                "key": "nameOfVariable"
+            },
+            {
+                "type": "label",
+                "key": "associatedActivity"
+            }
+        ],
+        [
+            {
+                "type": "searchBox"
+               
+            },
+            {
+                "type": "searchBox"
+            }
+        ],
+        [
+            {
+                "type": "grid",
+                "source": "dynamic"
+            }
+        ]
+    ]
+}

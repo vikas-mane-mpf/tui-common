@@ -1,0 +1,594 @@
+[
+  {
+    "topicId": 1,
+    "iconPath": "ic-personal-finance"
+  },
+  {
+    "topicId": 2,
+    "iconPath": "ic-automotive"
+  },
+  {
+    "topicId": 3,
+    "iconPath": "ic-business"
+  },
+  {
+    "topicId": 4,
+    "iconPath": "ic-home-garden"
+  },
+  {
+    "topicId": 5,
+    "iconPath": "ic-careers"
+  },
+  {
+    "topicId": 6,
+    "iconPath": "ic-law"
+  },
+  {
+    "topicId": 7,
+    "iconPath": "ic-pet"
+  },
+  {
+    "topicId": 8,
+    "iconPath": "ic-education"
+  },
+  {
+    "topicId": 9,
+    "iconPath": "ic-art"
+  },
+  {
+    "topicId": 10,
+    "iconPath": "ic-food"
+  },
+  {
+    "topicId": 11,
+    "iconPath": "ic-family"
+  },
+  {
+    "topicId": 12,
+    "iconPath": "ic-health"
+  },
+  {
+    "topicId": 13,
+    "iconPath": "ic-real-estate"
+  },
+  {
+    "topicId": 14,
+    "iconPath": "ic-science"
+  },
+  {
+    "topicId": 15,
+    "iconPath": "ic-auto-parts"
+  },
+  {
+    "topicId": 16,
+    "iconPath": "ic-auto-repair"
+  },
+  {
+    "topicId": 17,
+    "iconPath": "ic-selling-cars"
+  },
+  {
+    "topicId": 18,
+    "iconPath": "ic-car-culture"
+  },
+  {
+    "topicId": 19,
+    "iconPath": "ic-certificated-pre-owned"
+  },
+  {
+    "topicId": 20,
+    "iconPath": "ic-ic-convertible"
+  },
+  { 
+    "topicId": 21,
+    "iconPath": "ic-automotive"
+  },
+  {
+    "topicId": 22,
+    "iconPath": "ic-crossover"
+  },
+  {
+    "topicId": 23,
+    "iconPath": "ic-diesel"
+  },
+  {
+    "topicId": 24,
+    "iconPath": "ic-electric-vehicles"
+  },
+  {
+    "topicId": 25,
+    "iconPath": "ic-hatchback"
+  },
+  {
+    "topicId": 26,
+    "iconPath": "ic-hybrid"
+  },
+  {
+    "topicId": 27,
+    "iconPath": "ic-luxury"
+  },
+  {
+    "topicId": 28,
+    "iconPath": "ic-minivan"
+  },
+  {
+    "topicId": 29,
+    "iconPath": "ic-motorcycles"
+  },
+  {
+    "topicId": 30,
+    "iconPath": "ic-navigation"
+  },
+  {
+    "topicId": 31,
+    "iconPath": "ic-off-road-vehicles"
+  },
+  {
+    "topicId": 32,
+    "iconPath": "ic-performance-vehicles"
+  },
+  {
+    "topicId": 33,
+    "iconPath": "ic-pickup"
+  },
+  {
+    "topicId": 34,
+    "iconPath": "ic-road-side-assistance"
+  },
+  {
+    "topicId": 35,
+    "iconPath": "ic-sedan"
+  },
+  {
+    "topicId": 36,
+    "iconPath": "ic-trucks-accessories"
+  },
+  {
+    "topicId": 37,
+    "iconPath": "ic-vintage-cars"
+  },
+  {
+    "topicId": 38,
+    "iconPath": "ic-wagon"
+  },
+  {
+    "topicId": 39,
+    "iconPath": "ic-job-search"
+  },
+  {
+    "topicId": 40,
+    "iconPath": "ic-college"
+  },
+  {
+    "topicId": 41,
+    "iconPath": "ic-pregnancy"
+  },
+  {
+    "topicId": 42,
+    "iconPath": "ic-babies-toddlers"
+  },
+  {
+    "topicId": 43,
+    "iconPath": "ic-pre-school"
+  },
+  {
+    "topicId": 44,
+    "iconPath": "ic-parenting-k-6-kids"
+  },
+  {
+    "topicId": 45,
+    "iconPath": "ic-parenting-teens"
+  },
+  {
+    "topicId": 46,
+    "iconPath": "ic-pregnancy"
+  },
+  {
+    "topicId": 47,
+    "iconPath": "ic-american-cuisine"
+  },
+  {
+    "topicId": 48,
+    "iconPath": "ic-barbecues-grilling"
+  },
+  {
+    "topicId": 49,
+    "iconPath": "ic-creole"
+  },
+  {
+    "topicId": 50,
+    "iconPath": "ic-chinese-cuisine"
+  },
+  {
+    "topicId": 51,
+    "iconPath": "ic-beer"
+  },
+  {
+    "topicId": 52,
+    "iconPath": "ic-tea"
+  },
+  {
+    "topicId": 53,
+    "iconPath": "ic-cuisine-specific"
+  },
+  {
+    "topicId": 54,
+    "iconPath": "ic-desserts-baking"
+  },
+  {
+    "topicId": 55,
+    "iconPath": "dining-out"
+  },
+  {
+    "topicId": 56,
+    "iconPath": "ic-food-allergies"
+  },
+  {
+    "topicId": 57,
+    "iconPath": "french-cuisine"
+  },
+  {
+    "topicId": 58,
+    "iconPath": "lowfat-cooking"
+  },
+  {
+    "topicId": 59,
+    "iconPath": "ic-italian-cuisine"
+  },
+  {
+    "topicId": 60,
+    "iconPath": "ic-japanese-cuisine"
+  },
+  {
+    "topicId": 61,
+    "iconPath": "mexican-cuisine"
+  },
+  {
+    "topicId": 62,
+    "iconPath": "vegan"
+  },
+  {
+    "topicId": 63,
+    "iconPath": "vegetarian"
+  },
+  {
+    "topicId": 64,
+    "iconPath": "wine"
+  },
+  {
+    "topicId": 65,
+    "iconPath": "ic-dogs"
+  },
+  {
+    "topicId": 66,
+    "iconPath": "ic-cats"
+  },
+  {
+    "topicId": 67,
+    "iconPath": "beginning-investing"
+  },
+  {
+    "topicId": 68,
+    "iconPath": "debt-loans"
+  },
+  {
+    "topicId": 69,
+    "iconPath": "insurance"
+  },
+  {
+    "topicId": 70,
+    "iconPath": "ic-investing"
+  },
+  {
+    "topicId": 71,
+    "iconPath": "retirement-planning"
+  },
+  {
+    "topicId": 72,
+    "iconPath": "apartments"
+  },
+  {
+    "topicId": 73,
+    "iconPath": "selling-homes"
+  },
+  {
+    "topicId": 74,
+    "iconPath": "contests-freebies"
+  },
+  {
+    "topicId": 75,
+    "iconPath": "couponing"
+  },
+  {
+    "topicId": 76,
+    "iconPath": "comparison-engines"
+  },
+  {
+    "topicId": 77,
+    "iconPath": "ic-appliances"
+  },
+  {
+    "topicId": 78,
+    "iconPath": "ic-entertaining"
+  },
+  {
+    "topicId": 79,
+    "iconPath": "ic-gardening"
+  },
+  {
+    "topicId": 80,
+    "iconPath": "ic-home-repair"
+  },
+  {
+    "topicId": 81,
+    "iconPath": "ic-home-theater"
+  },
+  {
+    "topicId": 82,
+    "iconPath": "ic-interior-decorating"
+  },
+  {
+    "topicId": 83,
+    "iconPath": "landscaping"
+  },
+  {
+    "topicId": 84,
+    "iconPath": "remodeling-construction"
+  },
+  {
+    "topicId": 85,
+    "iconPath": "video-computer-games"
+  },
+  {
+    "topicId": 86,
+    "iconPath": "ic-dating"
+  },
+  {
+    "topicId": 87,
+    "iconPath": "teens"
+  },
+  {
+    "topicId": 88,
+    "iconPath": "ic-weddings"
+  },
+  {
+    "topicId": 89,
+    "iconPath": "accessories"
+  },
+  {
+    "topicId": 90,
+    "iconPath": "clothing"
+  },
+  {
+    "topicId": 91,
+    "iconPath": "jewelry"
+  },
+  {
+    "topicId": 92,
+    "iconPath": "ic-beauty"
+  },
+  {
+    "topicId": 93,
+    "iconPath": "fashion"
+  },
+  {
+    "topicId": 94,
+    "iconPath": "bicycling"
+  },
+  {
+    "topicId": 95,
+    "iconPath": "ic-golf"
+  },
+  {
+    "topicId": 96,
+    "iconPath": "jogging"
+  },
+  {
+    "topicId": 97,
+    "iconPath": "ic-tennis"
+  },
+  {
+    "topicId": 98,
+    "iconPath": "cell-phones"
+  },
+  {
+    "topicId": 99,
+    "iconPath": "entertainment"
+  },
+  {
+    "topicId": 100,
+    "iconPath": "ic-allergies"
+  },
+  {
+    "topicId": 101,
+    "iconPath": "cholesterol"
+  },
+  {
+    "topicId": 102,
+    "iconPath": "chronic-pain"
+  },
+  {
+    "topicId": 103,
+    "iconPath": "ic-cold-flu"
+  },
+  {
+    "topicId": 104,
+    "iconPath": "dental-care"
+  },
+  {
+    "topicId": 105,
+    "iconPath": "dermatology"
+  },
+  {
+    "topicId": 106,
+    "iconPath": "exercise"
+  },
+  {
+    "topicId": 107,
+    "iconPath": "migraines"
+  },
+  {
+    "topicId": 108,
+    "iconPath": "men-s-health"
+  },
+  {
+    "topicId": 109,
+    "iconPath": "nutrition"
+  },
+  {
+    "topicId": 110,
+    "iconPath": "senior-health"
+  },
+  {
+    "topicId": 111,
+    "iconPath": "weight-loss"
+  },
+  {
+    "topicId": 112,
+    "iconPath": "ic-women-s-health"
+  },
+  {
+    "topicId": 113,
+    "iconPath": "ic-travel"
+  },
+  {
+    "topicId": 114,
+    "iconPath": "adventure-travel"
+  },
+  {
+    "topicId": 115,
+    "iconPath": "ic-africa"
+  },
+  {
+    "topicId": 116,
+    "iconPath": "ic-air-travel"
+  },
+  {
+    "topicId": 117,
+    "iconPath": "australia-new-zealand"
+  },
+  {
+    "topicId": 118,
+    "iconPath": "bed-breakfasts"
+  },
+  {
+    "topicId": 119,
+    "iconPath": "budget-travel"
+  },
+  {
+    "topicId": 120,
+    "iconPath": "business-travel"
+  },
+  {
+    "topicId": 121,
+    "iconPath": "by-us-locale"
+  },
+  {
+    "topicId": 122,
+    "iconPath": "ic-camping"
+  },
+  {
+    "topicId": 123,
+    "iconPath": "ic-canada"
+  },
+  {
+    "topicId": 124,
+    "iconPath": "caribbean"
+  },
+  {
+    "topicId": 125,
+    "iconPath": "ic-cruises"
+  },
+  {
+    "topicId": 126,
+    "iconPath": "eastern-europe"
+  },
+  {
+    "topicId": 127,
+    "iconPath": "europe"
+  },
+  {
+    "topicId": 128,
+    "iconPath": "france"
+  },
+  {
+    "topicId": 129,
+    "iconPath": "greece"
+  },
+  {
+    "topicId": 130,
+    "iconPath": "getaways"
+  },
+  {
+    "topicId": 131,
+    "iconPath": "ic-hotel"
+  },
+  {
+    "topicId": 132,
+    "iconPath": "italy"
+  },
+  {
+    "topicId": 133,
+    "iconPath": "japan"
+  },
+  {
+    "topicId": 134,
+    "iconPath": "mexico-central-america"
+  },
+  {
+    "topicId": 135,
+    "iconPath": "national-parks"
+  },
+  {
+    "topicId": 136,
+    "iconPath": "south-america"
+  },
+  {
+    "topicId": 137,
+    "iconPath": "spas"
+  },
+  {
+    "topicId": 138,
+    "iconPath": "theme-parks"
+  },
+  {
+    "topicId": 139,
+    "iconPath": "ic-traveling-with-kids"
+  },
+  {
+    "topicId": 140,
+    "iconPath": "ic-united-kingdom"
+  },
+  {
+    "topicId": 141,
+    "iconPath": "ic-shopping"
+  },
+  {
+    "topicId": 142,
+    "iconPath": "ic-sports"
+  },
+  {
+    "topicId": 143,
+    "iconPath": "ic-fashion"
+  },
+  {
+    "topicId": 144,
+    "iconPath": "ic-news"
+  },
+  {
+    "topicId": 145,
+    "iconPath": "ic-technology-computing"
+  },
+  {
+    "topicId": 146,
+    "iconPath": "ic-society"
+  },
+  {
+    "topicId": 147,
+    "iconPath": "hobbies-interests"
+  },
+  {
+    "topicId": 148,
+    "iconPath": "ic-financial-aid"
+  }
+]

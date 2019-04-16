@@ -1,0 +1,74 @@
+<div class="ui form">
+	<div class="field">
+		<input type="text" name="search" placeholder="Search..." id="search">
+		<i class="search icon"></i>
+	</div>
+</div>
+
+<div class="ui styled accordion js-accordion">
+	<% for(var m = 0; m < data.length; m++) { %>
+		<div class="accordion-item-parent">
+			<div class="title js-title">
+				<i class="dropdown icon"></i>
+				<div class="ui checkbox dspCheckBoxes js-checkboxes">
+					<input type="checkbox" disabled name="dspNames" data-id="<%= data[m].dspKey %>" data-name="<%= data[m].dspName %>" tabindex="0" class="hidden">
+					<label class="js-first-label"><%= data[m].dspName %></label>
+				</div>
+			</div>
+			<div class="content js-content">
+				<% if(data[m].seats) { %>
+					<% for(var i = 0; i < data[m].seats.length; i++) { %>
+						<% if(data[m].seats[i].childSeats && data[m].seats[i].childSeats.length > 0) { %>
+							<div class="accordion inner-accordion-child">
+								<div class="field title">
+									<i class="dropdown icon"></i>
+									<div class="ui checkbox dspCheckBoxes js-childSeatWithGrandChild" data-key="<%= data[m].seats[i].seatKey %>">
+									  <input type="checkbox" name="seatNames" data-id="<%= data[m].seats[i].seatId %>" data-name="<%= data[m].seats[i].seatName %>" data-key="<%= data[m].seats[i].seatKey %>" tabindex="0" class="hidden">
+									  <label class="js-third-label"><%= data[m].seats[i].seatName %></label>
+									</div>
+								</div>
+								<div class="content">
+									<% for(var j = 0; j < data[m].seats[i].childSeats.length; j++) { %>
+										<div class="field">
+											<div class="ui checkbox dspCheckBoxes js-GrandchildSeat" data-key="<%= data[m].seats[i].childSeats[j].seatKey %>">
+											  <input type="checkbox" name="childSeatNames" data-id="<%= data[m].seats[i].childSeats[j].seatId %>" data-name="<%= data[m].seats[i].childSeats[j].seatName %>" data-key="<%= data[m].seats[i].childSeats[j].seatKey %>" tabindex="0" class="hidden">
+											  <label class="js-fourth-label"><%= data[m].seats[i].childSeats[j].seatName %></label>
+											</div>
+										</div>
+									<%}%>
+								</div>
+							</div>
+						<%} else { %>
+							<div class="field">
+								<div class="ui checkbox dspCheckBoxes js-childSeat" data-key="<%= data[m].seats[i].seatKey %>">
+								  <input type="checkbox" name="seatNames" data-id="<%= data[m].seats[i].seatId %>" data-name="<%= data[m].seats[i].seatName %>" data-key="<%= data[m].seats[i].seatKey %>" tabindex="0" class="hidden">
+								  <label class="js-second-label"><%= data[m].seats[i].seatName %></label>
+								</div>
+							</div>
+						<%}%>
+					<%}%>
+				<%}%>
+			</div>
+		</div>
+	<%}%>
+	</div>
+
+</div>
+
+<div class="field mainControl clear-fix js-main-controls">
+	<% if(from == 'fromModels') { %>
+		<div class="ui checkbox showAllCheckbox js-selectAll" style="display: none;">
+			<input type="checkbox" name="small" tabindex="0" class="hidden">
+			<label><%= i18next.t('app.selectAllCheckboxes') %></label>
+		</div>
+	<%} else { %>
+		<div class="ui checkbox showAllCheckbox js-selectAll">
+			<input type="checkbox" name="small" tabindex="0" class="hidden">
+			<label><%= i18next.t('app.selectAllCheckboxes') %></label>
+		</div>
+	<%}%>
+	<div class="ui checkbox showSelectedCheckbox js-showSelected">
+		<input type="checkbox" name="small" tabindex="0" class="hidden">
+		<label><%= i18next.t('app.showSelectedCheckboxes') %></label>
+	</div>
+</div>

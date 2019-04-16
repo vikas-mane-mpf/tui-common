@@ -1,0 +1,39 @@
+{
+    "rows": [
+        [
+            {
+                "type": "DropDown",
+                "key": "scopedropDownOptions"
+            },
+            {
+                "type": "searchBox"
+            }
+        ],
+        [
+            {
+                "type": "label",
+                "key": "advAccName"
+            },
+            {
+                "type": "DropDown",
+                "key": "sortDropDownOptions"
+            }
+        ],
+        [
+            {
+                "type": "tab",
+                "key": "tabValues1"
+            },
+            {
+                "type": "tab",
+                "key": "tabValues2"
+            }
+        ],
+        [
+            {
+                "type": "grid",
+                "source": "dynamic"
+            }
+        ]
+    ]
+}

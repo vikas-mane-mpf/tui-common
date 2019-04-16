@@ -1,0 +1,148 @@
+<div class="ui menu main-wrapper-CS-menu">
+	<%if(!isUsedForFindAudience){%>
+		<a class="browse item js-overlay-main-dropdown" style="padding-left:10px;">
+			<span data-type="heading">Select Attribute From List</span>
+			<span class="modal_seg_drpdn js-selected-seg" data-type="selectedValue"></span>
+			<i class="dropdown icon" style="margin:0 5px;"></i>
+		</a>
+	<%} else {%>
+		<div class="audience-label" data-type="selectedAudienceLabel"></div>
+	<%}%>
+
+	<div class="ui fluid popup bottom left transition hidden mega-dropdown js-mega-CS-dropdown mega-CS-dropdown <% if(onlyColumn && part2Section1List.length == 0) { %>two-column<% } %>">
+		<div class="ui grid cs-main-grid">
+			<div class="<% if(onlyColumn && part2Section1List.length == 0) { %>sixteen<% } else { %>ten<% } %> wide column js-five-column segment-five-column">
+				<h4 class="ui header js-dropdown-heading">
+					<% if(!forBuildModel){ %>
+					  	<span class="mainTitle"><%= observedAttrsTitle %></span>
+					  <% } %>
+				</h4>
+				<div class="ui divider"></div>
+
+				<div class="ui three column relaxed equal height <% if(!onlyColumn) { %>divided grid<% } %>">
+					<div class="five wide column segment-cookie-show">
+						<% _.each(part1Section1List, function(item){ %>
+						<% if(!forBuildModel){ %>
+							<% 
+								if(typeof item["scope"] != "undefined"){
+									if(item["scope"].indexOf(scope) != -1){ %>
+										<div class="campaign-list" style="margin: 15px 0 8px;">
+											<% if(!forBuildModel){ %>
+											<h4 class="ui header"><%= item.attributeName %></h4>
+											<% } %>
+											<div class="ui link list">
+												<% _.each(item.options, function(rowObj) {%> 
+												<a class="item js-list" data-value="<%= 'observed.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %> </a>
+												<% }); %>
+											</div>
+										</div>
+									<% }
+								}else{ 
+							%>
+								<div>
+									<% if(!forBuildModel){ %>
+									<h4 class="ui header"><%= item.attributeName %></h4>
+									<% } %>
+									<div class="ui link list">									
+										<% _.each(item.options, function(rowObj) {
+											if(typeof rowObj["scope"] != "undefined"){
+										%>									
+											<% if(rowObj["scope"].indexOf(scope.toLowerCase()) != -1){ %>
+												<a class="item js-list" data-value="<%= 'observed.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %></a>
+											<% }
+											} %>	 
+										<% }); %>
+									</div>
+								</div>
+							<% } %>
+						<% }else{ %>
+							<% if(item.options.length > 0) { %>
+								<div class="activity-list" style="margin: 15px 0 8px;">
+									<% if(!forBuildModel){ %>
+									<h4 class="ui header"><%= item.attributeName %></h4>
+									<% } %>
+									<div class="ui link list">
+										<% _.each(item.options, function(rowObj) {%> 
+											<a class="item js-list" data-value="<%= 'observed.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %></a>								 
+										<% }); %>
+									</div>
+								</div>				
+							<% } %>
+						<% } %>
+						<% }); %>		
+					</div>
+		    
+					<% if(!forBuildModel){ %>
+						<% if(part1Section2List.length > 0) { %>
+							<div class="five wide column segment-mobile-hide">
+								<% _.each(part1Section2List, function(item){ %>
+									<div>
+										<h4 class="ui header"><%= item.attributeName %></h4>
+										<div class="ui link list" style="margin-bottom:12px;">
+											<% _.each(item.options, function(rowObj) { %> <a class="item js-list" data-value="<%= 'observed.' + item.attributeName + '.' + rowObj.name %> " title="<%= rowObj.value %>"><%= rowObj.value %></a> <% }); %>
+										</div>
+									</div>
+								<% }); %>		
+							</div>
+						<% } %>
+						<% if(part1Section2List.length > 0) { %>
+							<div class="six wide column segment-mobile-hide">
+								<% _.each(part1Section3List, function(item){ %>
+										<div>
+											<h4 class="ui header"><%= item.attributeName %></h4>
+											<div class="ui link list">
+												<% _.each(item.options, function(rowObj) { %> <a class="item js-list" data-value="<%= 'observed.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %></a> <% }); %>
+											</div>
+										</div>
+										
+								<% }); %>		
+							</div>	
+						<% } %>	
+					<% } %>
+				</div>
+			</div>
+				<%if (!forBuildModel && part2Section1List.length > 0) {%>
+				<!-- <div class="ui vertical divider"></div> -->
+				<div class="six wide column segment-eleven-column" style="border-left:1px solid #e5e5e5">
+					<h4 class="ui header"><%= modelledAttrsTitle %></h4>
+					<div class="ui divider"></div>
+					<div class="ui column relaxed equal height divided grid">
+			  			<% if(!forBuildModel){ %>
+						<div class="column modelledAttributes">
+							<div class="column">
+								<% _.each(part2Section1List, function(item){ %>
+									<div>
+										<h4 class="ui header"><%= item.attributeName %></h4>
+										<div class="ui link list">
+											<% _.each(item.options, function(rowObj) {
+											if(typeof rowObj["scope"] != "undefined"){ %>
+												<% if(rowObj["scope"].indexOf(scope.toLowerCase()) != -1){ %>
+													<a class="item js-list" data-value="<%= 'modelled.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %></a> 
+													<!-- <a class="item js-list" data-value="<%= 'modelled.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %></a> -->
+												<% }
+												} %> 
+											<% }); %>
+										</div>
+									</div>
+								<% }); %>		
+							</div>
+							<div>
+								<% _.each(part2Section2List, function(item){ %>
+									<div>
+										<h4 class="ui header"><%= item.attributeName %></h4>
+										<div class="ui link list">
+											<% _.each(item.options, function(rowObj) { %>
+												<a class="item js-list" data-value="<%= 'modelled.' + item.attributeName + '.' + rowObj.name %>" title="<%= rowObj.value %>"><%= rowObj.value %></a> 
+											<% }); %>
+										</div>
+									</div>
+								<% }); %>		
+							</div>					
+						</div>
+					</div>
+				</div>
+				<% } %>	
+			<% } %>
+		</div>
+	</div>
+</div>

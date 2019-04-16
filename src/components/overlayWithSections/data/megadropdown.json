@@ -1,0 +1,145 @@
+{
+    "observed": {
+        "attributeName": "OBSERVED ATTRIBUTES",
+        "options": [
+            {
+                "attributeName": "ACTIVITY",
+                "seqNo": "1",
+                "sectionNo": "2",
+                "options": [
+                    {
+                        "name": "activityLastOccurrence",
+                        "value": "Activity Last Occurrence"
+                    },
+                    {
+                        "name": "numberOfActivityOccurrences",
+                        "value": "Number of Activity Last Occurrences"
+                    },
+                    {
+                        "name": "customVariableValue",
+                        "value": "Custom Variable Value"
+                    }
+                ]
+            },
+            {
+                "attributeName": "CAMPAIGN",
+                "seqNo": "2",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "campaignExposureCount",
+                        "value": "CAMPAIGN EXPOSURE COUNT"
+                    },
+                    {
+                        "name": "campaignLastExposure",
+                        "value": "CAMPAIGN LAST EXPOSURE"
+                    },
+                    {
+                        "name": "campaignLastClick",
+                        "value": "CAMPAIGN LAST CLICK"
+                    },
+                    {
+                        "name": "campaignClickCount",
+                        "value": "CAMPAIGN COUNT COUNT"
+                    }
+                ]
+            },
+            {
+                "attributeName": "DEVICE",
+                "seqNo": "1",
+                "sectionNo": "2",
+                "options": [
+                    {
+                        "name": "deviceVendor",
+                        "value": "DEVICE VENDOR"
+                    },
+                    {
+                        "name": "deviceModel",
+                        "value": "DEVICE MODEL"
+                    }
+                ]
+            },
+            {
+                "attributeName": "GEO-LOCATION",
+                "seqNo": "2",
+                "sectionNo": "2",
+                "options": [
+                    {
+                        "name": "CITY",
+                        "value": "CITY"
+                    },
+                    {
+                        "name": "COUNTRY",
+                        "value": "COUNTRY"
+                    },
+                    {
+                        "name": "POSTAL CODE",
+                        "value": "POSTAL CODE"
+                    }
+                ]
+            },
+            {
+                "attributeName": "OTHER OBSERVED ATTRIBUTES",
+                "seqNo": "3",
+                "sectionNo": "3",
+                "options": [
+                    {
+                        "name": "BROWSER",
+                        "value": "BROWSER"
+                    },
+                    {
+                        "name": "COOKIE AGE",
+                        "value": "COOKIE AGE"
+                    },
+                    {
+                        "name": "OS",
+                        "value": "OS"
+                    },
+                    {
+                        "name": "INTEREST",
+                        "value": "INTEREST"
+                    },
+                    {
+                        "name": "RAWINTEREST COUNT",
+                        "value": "RAWINTEREST COUNT"
+                    }
+                ]
+            }
+        ]
+    },
+    "modelled": {
+        "attributeName": "MODELLED ATTRIBUTES",
+        "options": [
+            {
+                "attributeName": "DEMOGRAPHIC",
+                "seqNo": "1",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "DEMOGRAPHIC ATTRIBUTE SCORE",
+                        "value": "DEMOGRAPHIC ATTRIBUTE SCORE"
+                    },
+                    {
+                        "name": "DEMOGRAPHIC MEMBERSHIP",
+                        "value": "DEMOGRAPHIC MEMBERSHIP"
+                    }
+                ]
+            },
+            {
+                "attributeName": "LOOKALIKE",
+                "seqNo": "2",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "LOOKALIKE ATTRIBUTE SCORE",
+                        "value": "LOOKALIKE ATTRIBUTE SCORE"
+                    },
+                    {
+                        "name": "LOOKALIKE SEGMENT MEMBERSHIP",
+                        "value": "LOOKALIKE SEGMENT MEMBERSHIP"
+                    }
+                ]
+            }
+        ]
+    }
+}

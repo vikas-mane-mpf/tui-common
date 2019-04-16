@@ -1,0 +1,223 @@
+{
+  "intersectionResults" : [ {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "9",
+      "name" : "iOS",
+      "type" : "OS"
+    } ],
+    "size" : 12921464,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "11003",
+      "name" : "Other + Tablet",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 32558,
+    "show" : true,
+    "y" : 33652
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "11002",
+      "name" : "Other + Mobile",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 381478,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "7002",
+      "name" : "Windows Mobile + Mobile",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 66456,
+    "show" : true,
+    "y" : 65016
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "9002",
+      "name" : "iOS + Mobile",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 11084138,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "11001",
+      "name" : "Other + Desktop",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 133741317,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "8",
+      "name" : "OS X",
+      "type" : "OS"
+    } ],
+    "size" : 14663281,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "9003",
+      "name" : "iOS + Tablet",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 1853720,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "7",
+      "name" : "Windows Mobile",
+      "type" : "OS"
+    } ],
+    "size" : 73895,
+    "show" : true,
+    "y" : 71029
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "6003",
+      "name" : "Windows + Tablet",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 98,
+    "show" : true,
+    "y" : 97
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "5",
+      "name" : "Other",
+      "type" : "DEVICE"
+    } ],
+    "size" : 16309618,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "6",
+      "name" : "Windows",
+      "type" : "OS"
+    } ],
+    "size" : 115975396,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "6001",
+      "name" : "Windows + Desktop",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 115975396,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "11",
+      "name" : "Other",
+      "type" : "OS"
+    } ],
+    "size" : 137693717,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "8001",
+      "name" : "OS X + Desktop",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 14663281,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "10003",
+      "name" : "Android + Tablet",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 21898992,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "2",
+      "name" : "Mobile",
+      "type" : "DEVICE"
+    } ],
+    "size" : 26395088,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "10002",
+      "name" : "Android + Mobile",
+      "type" : "DEVICE+OS"
+    } ],
+    "size" : 15310090,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "1",
+      "name" : "Desktop",
+      "type" : "DEVICE"
+    } ],
+    "size" : 173754286,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "3",
+      "name" : "Tablet",
+      "type" : "DEVICE"
+    } ],
+    "size" : 23936450,
+    "show" : true,
+    "y" : 80000
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "4",
+      "name" : "TV",
+      "type" : "DEVICE"
+    } ],
+    "size" : 8495,
+    "show" : true,
+    "y" : 8606
+  }, {
+    "traits" : [ {
+      "traitType" : 0,
+      "id" : "10",
+      "name" : "Android",
+      "type" : "OS"
+    } ],
+    "size" : 45863548,
+    "show" : true,
+    "y" : 80000
+  } ]
+}

@@ -1,0 +1,22 @@
+[ {
+  "os" : "iOS",
+  "account_id" : 901,
+  "id_type" : "Cookie",
+  "device_type" : "Tablet",
+  "unique_device_count" : 20520,
+  "time_stamp" : "2017-11-28T00:00Z"
+}, {
+  "os" : "Windows",
+  "account_id" : 901,
+  "id_type" : "Cookie",
+  "device_type" : "Desktop",
+  "unique_device_count" : 1800,
+  "time_stamp" : "2017-11-28T00:00Z"
+},{
+  "os": "Android",
+  "account_id": 901,
+  "time_stamp": "2017-11-15T00:00Z",
+  "unique_device_count": 78240,
+  "id_type": "Cookie",
+  "device_type": "Mobile"
+}, ]

@@ -1,0 +1,27 @@
+[
+    {
+        "unique_device_count": 14723787,
+        "device_type": "Desktop",
+        "id_type": "Cookie"
+    },
+    {
+        "unique_device_count": 13369813,
+        "device_type": "Mobile",
+        "id_type": "Cookie"
+    },
+    {
+        "unique_device_count": 4609306,
+        "device_type": "Mobile",
+        "id_type": "Device ID"
+    },
+    {
+          "id_type" : "Cookie",
+          "device_type" : "Tablet",
+          "unique_device_count" : 30007,
+    },
+    {
+          "id_type" : "Device ID",
+          "device_type" : "Tablet",
+          "unique_device_count" : 8000007,
+    }
+]

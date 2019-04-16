@@ -1,0 +1,71 @@
+<div class="content" style="color:rgb(51, 51, 51)">
+    <div class="header" style="font-size:1em;">
+        <% switch(modelType){
+            case "INTEREST":
+            case "PREDICTIVE_INTEREST":
+            case "INTENT":
+            print(topicName);
+            switch(segmentType){
+                case "HIGH":
+                    print(" (" + segmentType + ")");
+                break;
+                case "MED":
+                    print(" (MEDIUM)");
+                break;
+                case "LOW":
+                    print(" (" + segmentType + ")");
+                break;
+            }
+            break;
+            default:
+            print(modelName);
+        }
+        %>
+
+    </div>
+    <div class="meta" style="font-style:italic;font-size:.9em;color:rgb(51, 51, 51);">
+        <% switch(modelType){
+        case "INTEREST":
+        case "PREDICTIVE_INTEREST":
+        case "INTENT":
+        if(parentTopicName)
+        print(parentTopicName);
+        break;
+        case "DEMOGRAPHIC":
+        if(_.keys(dataPartners).length){
+        print(_.pluck(_.values(dataPartners), "name").join(", "));
+        }
+        break;
+        case "SEGMENT":
+        if(_.keys(dataPartners).length){
+        print(_.pluck(_.values(dataPartners), "name").join(", "));
+        }else if(_.keys(advertisers).length){
+        print(_.pluck(_.values(advertisers), "name").join(", "));
+        }
+        break;
+        }
+        %>
+    </div>
+    <div style="padding:.7em 0;">
+        Audience Size: <%=numeral(audienceSize).format("0.[0]a").toUpperCase()%><!--<br>
+        Overlap: <%=numeral(activityReach/100).format("0.[00]%")%>-->
+    </div>
+    <span>
+    <%
+    if(relevancy >= 75){%>
+        This Audience has a <span style="font-weight:bold;xcolor:<%=relevancyColor%>">Very High Relevancy</span>
+        <%} else if(relevancy >= 45) {%>
+        This Audience has a <span style="font-weight:bold;xcolor:<%=relevancyColor%>">High Relevancy</span>
+        <%} else if(relevancy >= 15) {%>
+        This Audience has an <span style="font-weight:bold;xcolor:<%=relevancyColor%>">Above Average Relevancy</span>
+        <%} else if(relevancy >= -15) {%>
+        This Audience has an <span style="font-weight:bold;xcolor:<%=relevancyColor%>">Average Relevancy</span>
+        <%} else if(relevancy >= -45) {%>
+        This Audience has a <span style="font-weight:bold;xcolor:<%=relevancyColor%>">Below Average Relevancy</span>
+        <%} else if(relevancy >= -75) {%>
+        This Audience has a <span style="font-weight:bold;xcolor:<%=relevancyColor%>">Low Relevancy</span>
+        <%} else {%>
+        This Audience has a <span style="font-weight:bold;xcolor:<%=relevancyColor%>">Very Low Relevancy</span>
+        <%}%> with a score of <span style="font-weight:bold;"><%=numeral(relevancy).format("0")%></span>
+    </span>
+</div>

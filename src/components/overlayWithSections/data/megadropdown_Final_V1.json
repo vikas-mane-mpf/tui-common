@@ -1,0 +1,140 @@
+{
+    "observed": {
+        "attributeName": "OBSERVED ATTRIBUTES",
+        "options": [
+            {
+                "attributeName": "ACTIVITY",
+				"scope" : ["account","advertiser"],
+                "seqNo": "1",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "activityLastOccurrence",
+                        "value": "ACTIVITY LAST OCCURRENCE"
+                    },
+                    {
+                        "name": "numberOfActivityOccurrences",
+                        "value": "NUMBER OF ACTIVITY OCCURRENCES"
+                    },
+                    {
+                        "name": "customVariableValue",
+                        "value": "CUSTOM VARIABLE VALUE"
+                    }
+                ]
+            },
+            {
+                "attributeName": "CAMPAIGN",
+				"scope" : ["advertiser"],
+                "seqNo": "2",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "campaignExposureCount",
+                        "value": "CAMPAIGN EXPOSURE COUNT"
+                    },
+                    {
+                        "name": "campaignLastExposure",
+                        "value": "CAMPAIGN LAST EXPOSURE"
+                    },
+                    {
+                        "name": "campaignLastClick",
+                        "value": "CAMPAIGN LAST CLICK"
+                    },
+                    {
+                        "name": "campaignClickCount",
+                        "value": "CAMPAIGN COUNT COUNT"
+                    }
+                ]
+            },
+            {
+                "attributeName": "DEVICE",
+				"scope" : ["account","advertiser"],
+                "seqNo": "1",
+                "sectionNo": "2",
+                "options": [
+                    {
+                        "name": "deviceVendor",
+                        "value": "DEVICE VENDOR"
+                    },
+                    {
+                        "name": "deviceModel",
+                        "value": "DEVICE MODEL"
+                    }
+                ]
+            },
+            {
+                "attributeName": "GEO-LOCATION",
+				"scope" : ["account","advertiser"],
+                "seqNo": "2",
+                "sectionNo": "2",
+                "options": [
+                    {
+                        "name": "city",
+                        "value": "CITY"
+                    },
+                    {
+                        "name": "country",
+                        "value": "COUNTRY"
+                    }
+                ]
+            },
+            {
+                "attributeName": "OTHER OBSERVED ATTRIBUTES",
+				"scope" : ["account","advertiser"],
+                "seqNo": "3",
+                "sectionNo": "3",
+                "options": [
+                    {
+                        "name": "browser",
+                        "value": "BROWSER"
+                    },
+                    {
+                        "name": "cookieAge",
+                        "value": "COOKIE AGE"
+                    },
+                    {
+                        "name": "os",
+                        "value": "OS"
+                    },
+                    {
+                        "name": "interestSegmentMembership",
+                        "value": "INTEREST SEGMENT MEMBERSHIP"
+                    },
+                    {
+                        "name": "rawInterestCount",
+                        "value": "RAW INTEREST COUNT"
+                    }
+                ]
+            }
+        ]
+    },
+    "modelled": {
+        "attributeName": "MODELLED ATTRIBUTES",
+        "options": [
+            {
+                "attributeName": "DEMOGRAPHIC",
+				"scope" : ["account","advertiser"],
+                "seqNo": "1",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "demographicSegmentMembership",
+                        "value": "DEMOGRAPHIC SEGMENT MEMBERSHIP"
+                    }
+                ]
+            },
+            {
+                "attributeName": "LOOKALIKE",
+				"scope" : ["account","advertiser"],
+                "seqNo": "2",
+                "sectionNo": "1",
+                "options": [
+                    {
+                        "name": "lookalikeSegmentMembership",
+                        "value": "LOOKALIKE SEGMENT MEMBERSHIP"
+                    }
+                ]
+            }
+        ]
+    }
+}

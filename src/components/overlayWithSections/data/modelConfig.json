@@ -1,0 +1,762 @@
+{
+    "expression": {
+        "VFM": {
+            "last_day": {
+                "attributeName": "activityLastOccurrence",
+                "attributePath": "observed.activity",
+                "scope": "@@scope@@",
+                "selectedValues": {
+                    "entity": {
+                        "id": "@@id@@",
+                        "name": "@@name@@"
+                    },
+                    "condition": "@@condition@@",
+                    "selectedInterval": {
+                        "parent": "D",
+                        "child": "@@interval@@"
+                    }
+                }
+            },
+            "custom": {
+                "attributeName": "customVariableValue",
+                "attributePath": "observed.activity",
+                "scope": "@@scope@@",
+                "selectedValues": {
+                    "entity": {
+                        "id": "@@id@@",
+                        "name": "@@name@@"
+                    },
+                    "activityId": {
+                        "id": "@@id@@",
+                        "name": "@@name@@"
+                    },
+                    "condition": "@@condition@@",
+                    "textBoxValue": "@@textBoxValue@@"
+                }
+            }
+        },
+        "VCM": {
+            "click": {
+                "attributeName": "campaignLastClick",
+                "attributePath": "observed.campaign",
+                "scope": "advertiser",
+                "selectedValues": {
+                    "entity": {
+                        "id": "@@id@@",
+                        "name": "@@name@@"
+                    },
+                    "condition": "isatanytime"
+                }
+            },
+            "lastclick_day": {
+                "attributeName": "campaignLastClick",
+                "attributePath": "observed.campaign",
+                "scope": "advertiser",
+                "selectedValues": {
+                    "entity": {
+                        "id": "@@id@@",
+                        "name": "@@name@@"
+                    },
+                    "condition": "@@condition@@",
+                    "selectedInterval": {
+                        "parent": "D",
+                        "child": "@@interval@@"
+                    }
+                }
+            }
+        }
+    },
+    "megadropdown": {
+        "observed": {
+            "attributeName": "OBSERVED ATTRIBUTES",
+            "options": [
+                {
+                    "attributeName": "ACTIVITY",
+                    "scope": [
+                        "account",
+                        "advertiser"
+                    ],
+                    "seqNo": "1",
+                    "sectionNo": "1",
+                    "options": [
+                        {
+                            "name": "activityLastOccurrence",
+                            "value": "Activity Last Occurrence"
+                        },
+                        {
+                            "name": "customVariableValue",
+                            "value": "Custom Variable Value"
+                        }
+                    ]
+                },
+                {
+                    "attributeName": "CAMPAIGN",
+                    "scope": [
+                        "advertiser"
+                    ],
+                    "seqNo": "2",
+                    "sectionNo": "1",
+                    "options": [
+                        {
+                            "name": "campaignExposureCount",
+                            "value": "Campaign Exposure Count"
+                        },
+                        {
+                            "name": "campaignLastExposure",
+                            "value": "Campaign Last Exposure"
+                        },
+                        {
+                            "name": "campaignLastClick",
+                            "value": "Campaign Last Click"
+                        },
+                        {
+                            "name": "campaignClickCount",
+                            "value": "Campaign Click Count"
+                        }
+                    ]
+                },
+                {
+                    "attributeName": "DEVICE",
+                    "scope": [
+                        "account",
+                        "advertiser"
+                    ],
+                    "seqNo": "1",
+                    "sectionNo": "2",
+                    "options": [
+                        {
+                            "name": "deviceVendor",
+                            "value": "Device Vendor"
+                        },
+                        {
+                            "name": "deviceModel",
+                            "value": "Device Model"
+                        }
+                    ]
+                },
+                {
+                    "attributeName": "GEO",
+                    "scope": [
+                        "account",
+                        "advertiser"
+                    ],
+                    "seqNo": "2",
+                    "sectionNo": "2",
+                    "options": [
+                        {
+                            "name": "city",
+                            "value": "City"
+                        },
+                        {
+                            "name": "country",
+                            "value": "Country"
+                        }
+                    ]
+                },
+                {
+                    "attributeName": "OTHER OBSERVED ATTRIBUTES",
+                    "scope": [
+                        "account",
+                        "advertiser"
+                    ],
+                    "seqNo": "3",
+                    "sectionNo": "3",
+                    "options": [
+                        {
+                            "name": "browser",
+                            "value": "Browser"
+                        },
+                        {
+                            "name": "cookieAge",
+                            "value": "Cookie Age"
+                        },
+                        {
+                            "name": "os",
+                            "value": "OS"
+                        }
+                    ]
+                }
+            ]
+        },
+        "modelled": {
+            "attributeName": "MODELLED ATTRIBUTES",
+            "options": [
+                {
+                    "attributeName": "SEGMENT MEMBERSHIP",
+                    "scope": [
+                        "account",
+                        "advertiser"
+                    ],
+                    "seqNo": "1",
+                    "sectionNo": "1",
+                    "options": [
+                        {
+                            "name": "userIsInInterestSegment",
+                            "value": "User is in Interest segment"
+                        },
+                        {
+                            "name": "userIsNotInInterestSegment",
+                            "value": "User is not in Interest segment"
+                        },
+                        {
+                            "name": "userIsInDemographicSegment",
+                            "value": "User is in Demographic segment"
+                        },
+                        {
+                            "name": "userIsNotInDemographicSegment",
+                            "value": "User is not in Demographic segment"
+                        },
+                        {
+                            "name": "userIsInLookalikeSegment",
+                            "value": "User is in Lookalike segment"
+                        },
+                        {
+                            "name": "userIsNotInLookalikeSegment",
+                            "value": "User is not in Lookalike segment"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "component": {
+        "activityIntervalSelection": {
+            "component": "dependentdropdown",
+            "header": "VALUE",
+            "displayParentFirst": "true",
+            "required": "true",
+            "fieldForSelection": "selectedInterval",
+            "parentWidth": "94",
+            "options": [
+                {
+                    "name": "DAYS AGO",
+                    "value": "D",
+                    "default": "true",
+                    "width": "95",
+                    "options": [
+                        {
+                            "name": "1",
+                            "value": "1",
+                            "default": "true"
+                        },
+                        {
+                            "name": "2",
+                            "value": "2"
+                        },
+                        {
+                            "name": "3",
+                            "value": "3"
+                        },
+                        {
+                            "name": "4",
+                            "value": "4"
+                        },
+                        {
+                            "name": "5",
+                            "value": "5"
+                        },
+                        {
+                            "name": "7",
+                            "value": "7"
+                        },
+                        {
+                            "name": "15",
+                            "value": "15"
+                        },
+                        {
+                            "name": "30",
+                            "value": "30"
+                        },
+                        {
+                            "name": "45",
+                            "value": "45"
+                        },
+                        {
+                            "name": "60",
+                            "value": "60"
+                        },
+                        {
+                            "name": "90",
+                            "value": "90"
+                        },
+                        {
+                            "name": "120",
+                            "value": "120"
+                        }
+                    ]
+                }
+            ]
+        },
+        "campaignIntervalSelection": {
+            "component": "dependentdropdown",
+            "header": "VALUE",
+            "displayParentFirst": "true",
+            "required": "true",
+            "fieldForSelection": "selectedInterval",
+            "parentWidth": "94",
+            "options": [
+                {
+                    "name": "DAYS AGO",
+                    "value": "D",
+                    "default": "true",
+                    "options": [
+                        {
+                            "name": "1",
+                            "value": "1",
+                            "default": "true"
+                        },
+                        {
+                            "name": "2",
+                            "value": "2"
+                        },
+                        {
+                            "name": "3",
+                            "value": "3"
+                        },
+                        {
+                            "name": "4",
+                            "value": "4"
+                        },
+                        {
+                            "name": "5",
+                            "value": "5"
+                        },
+                        {
+                            "name": "7",
+                            "value": "7"
+                        },
+                        {
+                            "name": "15",
+                            "value": "15"
+                        },
+                        {
+                            "name": "30",
+                            "value": "30"
+                        },
+                        {
+                            "name": "45",
+                            "value": "45"
+                        },
+                        {
+                            "name": "60",
+                            "value": "60"
+                        },
+                        {
+                            "name": "90",
+                            "value": "90"
+                        },
+                        {
+                            "name": "120",
+                            "value": "120"
+                        }
+                    ]
+                }
+            ]
+        },
+        "campaignExposureCountSelection": {
+            "component": "dropdown",
+            "header": "VALUE",
+            "required": "true",
+            "fieldForSelection": "occurrences",
+            "source": "options",
+            "options": [
+                {
+                    "name": "1",
+                    "value": "1",
+                    "default": "true"
+                },
+                {
+                    "name": "2",
+                    "value": "2"
+                },
+                {
+                    "name": "3",
+                    "value": "3"
+                },
+                {
+                    "name": "4",
+                    "value": "4"
+                },
+                {
+                    "name": "5",
+                    "value": "5"
+                },
+                {
+                    "name": "6",
+                    "value": "6"
+                },
+                {
+                    "name": "7",
+                    "value": "7"
+                },
+                {
+                    "name": "8",
+                    "value": "8"
+                },
+                {
+                    "name": "9",
+                    "value": "9"
+                },
+                {
+                    "name": "10",
+                    "value": "10"
+                },
+                {
+                    "name": "15",
+                    "value": "15"
+                },
+                {
+                    "name": "20",
+                    "value": "20"
+                },
+                {
+                    "name": "25",
+                    "value": "25"
+                },
+                {
+                    "name": "30",
+                    "value": "30"
+                },
+                {
+                    "name": "40",
+                    "value": "40"
+                },
+                {
+                    "name": "50",
+                    "value": "50"
+                },
+                {
+                    "name": "60",
+                    "value": "60"
+                },
+                {
+                    "name": "70",
+                    "value": "70"
+                },
+                {
+                    "name": "80",
+                    "value": "80"
+                },
+                {
+                    "name": "90",
+                    "value": "90"
+                },
+                {
+                    "name": "100",
+                    "value": "100"
+                }
+            ]
+        },
+        "campaignClickCountSelection": {
+            "component": "dropdown",
+            "header": "VALUE",
+            "required": "true",
+            "fieldForSelection": "occurrences",
+            "source": "options",
+            "options": [
+                {
+                    "name": "1",
+                    "value": "1",
+                    "default": "true"
+                },
+                {
+                    "name": "2",
+                    "value": "2"
+                },
+                {
+                    "name": "3",
+                    "value": "3"
+                },
+                {
+                    "name": "4",
+                    "value": "4"
+                },
+                {
+                    "name": "5",
+                    "value": "5"
+                },
+                {
+                    "name": "6",
+                    "value": "6"
+                },
+                {
+                    "name": "7",
+                    "value": "7"
+                },
+                {
+                    "name": "8",
+                    "value": "8"
+                },
+                {
+                    "name": "9",
+                    "value": "9"
+                },
+                {
+                    "name": "10",
+                    "value": "10"
+                }
+            ]
+        },
+        "cookieAgeDropDown": {
+            "component": "dropdown",
+            "header": "VALUE",
+            "required": "true",
+            "fieldForSelection": "interval",
+            "source": "options",
+            "next": {
+                "component": "dropdown",
+                "width": "75",
+                "source": "options",
+                "header": "OPERATOR",
+                "parentComponent": "cookieAgeDropDown",
+                "options": [
+                    {
+                        "name": "DAYS",
+                        "value": "days"
+                    }
+                ]
+            },
+            "options": [
+                {
+                    "name": "1",
+                    "value": "1",
+                    "default": "true"
+                },
+                {
+                    "name": "2",
+                    "value": "2"
+                },
+                {
+                    "name": "3",
+                    "value": "3"
+                },
+                {
+                    "name": "4",
+                    "value": "4"
+                },
+                {
+                    "name": "5",
+                    "value": "5"
+                },
+                {
+                    "name": "6",
+                    "value": "6"
+                },
+                {
+                    "name": "7",
+                    "value": "7"
+                },
+                {
+                    "name": "8",
+                    "value": "8"
+                },
+                {
+                    "name": "9",
+                    "value": "9"
+                },
+                {
+                    "name": "10",
+                    "value": "10"
+                },
+                {
+                    "name": "15",
+                    "value": "15"
+                },
+                {
+                    "name": "30",
+                    "value": "30"
+                },
+                {
+                    "name": "45",
+                    "value": "45"
+                },
+                {
+                    "name": "60",
+                    "value": "60"
+                },
+                {
+                    "name": "90",
+                    "value": "90"
+                }
+            ]
+        },
+        "numberTextBox": {
+            "fieldForSelection": "textBoxValue",
+            "header": "VALUE",
+            "required": "true",
+            "component": "textbox",
+            "type": "Number"
+        },
+        "stringTextBox": {
+            "fieldForSelection": "textBoxValue",
+            "header": "VALUE",
+            "required": "true",
+            "component": "textbox",
+            "type": "String"
+        },
+        "multiSelectDropdown": {
+            "header": "VALUE",
+            "fieldForSelection": "entities"
+        },
+        "segmentBuilderActivityOverlay": {
+            "header": "VALUE"
+        }
+    },
+    "configuration": {
+        "observed": [
+            {
+                "activity": [
+                    {
+                        "attributeName": "activityLastOccurrence",
+                        "requiredFields": [
+                            "selectedValues.entity.id",
+                            "selectedValues.condition",
+                            "selectedValues.selectedInterval.parent",
+                            "selectedValues.selectedInterval.child"
+                        ],
+                        "header": "SELECT ATTRIBUTE",
+                        "expressionTemplate": "VFM.@@entity@@.last_day @@condition@@ @@interval@@",
+                        "adjoiningLabel": "of",
+                        "scope": [
+                            "account",
+                            "advertiser"
+                        ],
+                        "next": {
+                            "component": "segmentBuilderActivityOverlay",
+                            "header": "VALUE",
+                            "fieldForSelection": "entity",
+                            "dataUrl": "getApi.htm?objectType=activity",
+                            "source": "dynamic",
+                            "objectType": "activity",
+                            "required": "true",
+                            "next": {
+                                "component": "dropdown",
+                                "width": "115",
+                                "header": "OPERATOR",
+                                "fieldForSelection": "condition",
+                                "required": "true",
+                                "source": "options",
+                                "options": [
+                                    {
+                                        "name": "Is more than",
+                                        "value": ">",
+                                        "default": "true",
+                                        "next": "activityIntervalSelection"
+                                    },
+                                    {
+                                        "name": "Is less than",
+                                        "value": "<",
+                                        "next": "activityIntervalSelection"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "attributeName": "customVariableValue",
+                        "requiredFields": [
+                            "selectedValues.entity.id",
+                            "selectedValues.condition",
+                            "selectedValues.activityId.id",
+                            "selectedValues.textBoxValue"
+                        ],
+                        "expressionTemplate": "VFM.@@activityId@@.custom[\"@@entity@@\"] @@condition@@ @@textBoxValue@@",
+                        "adjoiningLabel": "for",
+                        "scope": [
+                            "account",
+                            "advertiser"
+                        ],
+                        "next": {
+                            "component": "segmentBuilderCustVariableOverlay",
+                            "header": "VALUE",
+                            "source": "dynamic",
+                            "dataUrl": "getApi.htm?objectType=activity",
+                            "objectType": "customvariable",
+                            "fieldForSelection": "entity",
+                            "fieldForActivitySelection": "activityId",
+                            "required": "true",
+                            "next": {
+                                "component": "dropdown",
+                                "width": "115",
+                                "header": "OPERATOR",
+                                "source": "options",
+                                "fieldForSelection": "condition",
+                                "required": "true",
+                                "options": [
+                                    {
+                                        "name": "Is",
+                                        "value": "=",
+                                        "next": "stringTextBox"
+                                    },
+                                    {
+                                        "name": "Is more than",
+                                        "value": ">",
+                                        "next": "numberTextBox"
+                                    },
+                                    {
+                                        "name": "Is less than",
+                                        "value": "<",
+                                        "next": "numberTextBox"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "campaign": [
+                    {
+                        "attributeName": "campaignLastClick",
+                        "requiredFields": [
+                            "selectedValues.entity.id",
+                            "selectedValues.condition",
+                            "selectedValues.selectedInterval.parent",
+                            "selectedValues.selectedInterval.child"
+                        ],
+                        "conditionalExpressionTemplate": {
+                            ">": "VCM.@@entity@@.lastclick_day @@condition@@ @@interval@@",
+                            "<": "VCM.@@entity@@.lastclick_day @@condition@@ @@interval@@",
+                            "isatanytime": "VCM.@@entity@@.click = True"
+                        },
+                        "adjoiningLabel": "for",
+                        "scope": [
+                            "advertiser"
+                        ],
+                        "next": {
+                            "component": "segmentBuilderActivityOverlay",
+                            "header": "VALUE",
+                            "required": "true",
+                            "fieldForSelection": "entity",
+                            "dataUrl": "getApi.htm?objectType=campaign",
+                            "source": "dynamic",
+                            "objectType": "campaign",
+                            "next": {
+                                "component": "dropdown",
+                                "width": "115",
+                                "header": "OPERATOR",
+                                "required": "true",
+                                "fieldForSelection": "condition",
+                                "source": "options",
+                                "options": [
+                                    {
+                                        "name": "Is at any time",
+                                        "value": "isatanytime"
+                                    },
+                                    {
+                                        "name": "Is more than",
+                                        "value": ">",
+                                        "next": "campaignIntervalSelection"
+                                    },
+                                    {
+                                        "name": "Is less than",
+                                        "value": "<",
+                                        "next": "campaignIntervalSelection"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

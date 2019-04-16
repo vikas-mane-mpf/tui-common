@@ -1,0 +1,66 @@
+[
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "Android",
+        "unique_device_count": 88240,
+        "id_type": "Cookie",
+        "device_type": "Tablet"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "OS-X",
+        "unique_device_count": 28240,
+        "id_type": "Cookie",
+        "device_type": "Desktop"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "Other",
+        "unique_device_count": 48240,
+        "id_type": "Cookie",
+        "device_type": "Desktop"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "Windows",
+        "unique_device_count": 18240,
+        "id_type": "Cookie",
+        "device_type": "Tablet"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "iOS",
+        "unique_device_count": 48240,
+        "id_type": "Cookie",
+        "device_type": "Tablet"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "Android",
+        "unique_device_count": 78240,
+        "id_type": "Cookie",
+        "device_type": "Mobile"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "Windows",
+        "unique_device_count": 68240,
+        "id_type": "Cookie",
+        "device_type": "Desktop"
+    },
+    {
+        "account_id": 901,
+        "time_stamp": "2017-11-15T00:00Z",
+        "os": "iOS",
+        "unique_device_count": 38240,
+        "id_type": "Cookie",
+        "device_type": "Mobile"
+    }
+]
