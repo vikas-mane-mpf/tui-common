@@ -68,5 +68,15 @@ module.exports = {
             "main": path.resolve("./src"),
             "components": path.resolve("./src/components")
         }
+    },
+    module:{
+        rules:[
+            {
+                test: /\.js$/,
+                parser: {
+                    amd: false
+                }
+            }
+        ]
     }
 }
