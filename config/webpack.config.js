@@ -43,11 +43,21 @@ module.exports = {
         "d3": {
             amd: "d3"
         },
-        "modules/audienceDiscovery/collections/CarrierBreakdownCollection": "modules/audienceDiscovery/collections/CarrierBreakdownCollection",
-        "modules/audienceDiscovery/collections/RelevancyCollection": "modules/audienceDiscovery/collections/RelevancyCollection",
-        "modules/audienceDiscovery/collections/DeviceBreakdownCollection": "modules/audienceDiscovery/collections/DeviceBreakdownCollection",
-        "modules/tags/util/Util": "modules/tags/util/Util",
-        "modules/home/utils/utils": "modules/home/utils/utils"
+        "modules/audienceDiscovery/collections/CarrierBreakdownCollection": {
+            amd: "modules/audienceDiscovery/collections/CarrierBreakdownCollection"
+        },
+        "modules/audienceDiscovery/collections/RelevancyCollection": {
+            amd: "modules/audienceDiscovery/collections/RelevancyCollection"
+        },
+        "modules/audienceDiscovery/collections/DeviceBreakdownCollection": {
+            amd: "modules/audienceDiscovery/collections/DeviceBreakdownCollection"
+        },
+        "modules/tags/util/Util": {
+            amd: "modules/tags/util/Util"
+        },
+        "modules/home/utils/utils": {
+            amd: "modules/home/utils/utils"
+        }
     },
     plugins: [new UglifyJsPlugin()],
     resolve:{
