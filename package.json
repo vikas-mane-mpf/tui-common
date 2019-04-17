@@ -4,7 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "webpack --config config/webpack.config.js"
+    "build": "webpack --config config/webpack.config.js",
+    "prebuild": "rm -rf dist",
+    "prepare": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +16,7 @@
     "webpack-cli": "^3.3.0"
   },
   "files": [
-    "src/**"
+    "dist"
   ],
   "devDependencies": {
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
