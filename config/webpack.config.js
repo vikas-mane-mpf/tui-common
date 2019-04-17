@@ -8,6 +8,9 @@ module.exports = {
     entry: {
         "bundle.js": glob.sync("./src/**/**.?(js|css)").map(f => path.resolve("./", f)),
     },
+    optimization:{
+        namedModules: true
+    },
     output: {
         libraryTarget: "amd-require",
         filename: "index.js",
