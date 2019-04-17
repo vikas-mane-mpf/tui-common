@@ -12,7 +12,7 @@ module.exports = {
         filename: "index.js",
     },
     externals:{
-        "jquery": "jquery",
+        "jquery": "jQuery",
         "moment": "moment",
         "underscore": "_",
         "numeral": "numeral",
