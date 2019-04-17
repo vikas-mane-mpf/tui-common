@@ -16,7 +16,7 @@ module.exports = {
         "moment": "moment",
         "underscore": "_",
         "numeral": "numeral",
-        "backbone": "Backbone",
+        "backbone": "backbone",
         "i18next": "i18next",
         "jstorage":"jstorage",
         "jqueryUI": "jqueryUI",
