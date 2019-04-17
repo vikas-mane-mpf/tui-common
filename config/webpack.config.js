@@ -16,17 +16,33 @@ module.exports = {
         "jquery": {
             amd: "jquery"
         },
-        "moment": "moment",
-        "underscore": "_",
-        "numeral": "numeral",
+        "moment": {
+            amd: "moment"
+        },
+        "underscore": {
+            amd: "underscore"
+        },
+        "numeral": {
+            amd: "numeral"
+        },
         "backbone": {
             amd: "backbone"
         },
-        "i18next": "i18next",
-        "jstorage":"jstorage",
-        "jqueryUI": "jqueryUI",
-        "jqueryFileDownLoader":"jqueryFileDownLoader",
-        "d3": "d3",
+        "i18next": {
+            amd: "i18next"
+        },
+        "jstorage":{
+            amd: "jstorage"
+        },
+        "jqueryUI": {
+            amd: "jqueryUI"
+        },
+        "jqueryFileDownLoader": {
+            amd: "jqueryFileDownLoader"
+        },
+        "d3": {
+            amd: "d3"
+        },
         "modules/audienceDiscovery/collections/CarrierBreakdownCollection": "modules/audienceDiscovery/collections/CarrierBreakdownCollection",
         "modules/audienceDiscovery/collections/RelevancyCollection": "modules/audienceDiscovery/collections/RelevancyCollection",
         "modules/audienceDiscovery/collections/DeviceBreakdownCollection": "modules/audienceDiscovery/collections/DeviceBreakdownCollection",
