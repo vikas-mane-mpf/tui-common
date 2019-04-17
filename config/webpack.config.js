@@ -9,7 +9,7 @@ module.exports = {
         "bundle.js": glob.sync("./src/**/**.?(js|css)").map(f => path.resolve("./", f)),
     },
     output: {
-        filename: "bundle.js",
+        filename: "index.js",
     },
     externals:{
         "jquery": "jquery",
