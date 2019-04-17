@@ -9,6 +9,7 @@ module.exports = {
         "bundle.js": glob.sync("./src/**/**.?(js|css)").map(f => path.resolve("./", f)),
     },
     output: {
+        libraryTarget: "amd",
         filename: "index.js",
     },
     externals:{
