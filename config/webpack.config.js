@@ -12,7 +12,7 @@ module.exports = {
         namedModules: true
     },
     output: {
-        libraryTarget: "amd-require",
+        libraryTarget: "amd",
         filename: "index.js",
     },
     externals:{
