@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config config/webpack.config.js",
     "prebuild": "rm -rf dist",
-    "prepare": "npm run build"
+    "prepare": "yarn build"
   },
   "keywords": [],
   "author": "",

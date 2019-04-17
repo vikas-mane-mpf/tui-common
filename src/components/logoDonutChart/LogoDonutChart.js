@@ -13,7 +13,7 @@ define(
         "text-loader!components/logoDonutChart/LogoDonutChartTpl.html",
         "components/logoDonutChart/LogoDonutChartModel",
         "components/logoDonutChart/LogoDonutChartDerivedModel",
-        "text-loader!modules/home/tpls/WidgetErrorTpl.html",
+        // "text-loader!modules/home/tpls/WidgetErrorTpl.html",
         "modules/audienceDiscovery/collections/DeviceBreakdownCollection",
         "modules/audienceDiscovery/collections/CarrierBreakdownCollection"
     ],
@@ -27,7 +27,7 @@ define(
         template,
         LogoDonutChartModel,
         LogoDonutChartDerivedModel,
-        errorTpl,
+        // errorTpl,
         DeviceBreakdownCollection,
         CarrierBreakdownCollection)
     {
@@ -192,7 +192,7 @@ define(
             showError:function(showError){
                 if(showError){
                     this.$chart.empty();
-                    this.$chart.append(errorTpl);
+                    // this.$chart.append(errorTpl);
                     this.showingError = true;
                 }
             },
