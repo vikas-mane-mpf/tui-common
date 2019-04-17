@@ -12,11 +12,15 @@ module.exports = {
         filename: "index.js",
     },
     externals:{
-        "jquery": "jQuery",
+        "jquery": {
+            amd: "jquery"
+        },
         "moment": "moment",
         "underscore": "_",
         "numeral": "numeral",
-        "backbone": "backbone",
+        "backbone": {
+            amd: "backbone"
+        },
         "i18next": "i18next",
         "jstorage":"jstorage",
         "jqueryUI": "jqueryUI",
