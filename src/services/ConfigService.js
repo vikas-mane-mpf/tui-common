@@ -13,6 +13,7 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 		},
 		
 		getConfig : function(id){
+			debugger
 			return this.configs[id];
 		},
 		
@@ -129,6 +130,5 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 	});
 	
 	var service = new ConfigService();
-	debugger
 	return service;
 });
