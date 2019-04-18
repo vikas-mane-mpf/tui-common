@@ -129,5 +129,6 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 	});
 	
 	var service = new ConfigService();
+	debugger
 	return service;
 });
