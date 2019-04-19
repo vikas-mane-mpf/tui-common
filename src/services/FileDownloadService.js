@@ -1,9 +1,9 @@
 define(["jquery","i18next","backbone",
-    "main/services/AccountService",
-    "main/utils/Cookie",
+    "services/AccountService",
+    "utils/Cookie",
     'components/dialog/Dialog',
-    "main/services/SecurityService",
-    "main/services/ErrorService",
+    "services/SecurityService",
+    "services/ErrorService",
     "jqueryFileDownLoader"] ,
         function($, i18next, Backbone, AccountService, CookieUtil, Dialog, SecurityService, ErrorService) {
 

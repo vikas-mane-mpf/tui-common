@@ -1,5 +1,5 @@
 define(['jquery', 'backbone', 'underscore', 'numeral', 'd3',
-        'text-loader!components/bubble/bubbleChartTooltipTpl.html'
+        'text!components/bubble/bubbleChartTooltipTpl.html'
     ],
     function ($, Backbone, _, numeral, d3, bubbleChartTooltipTpl) {
 

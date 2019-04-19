@@ -2,13 +2,13 @@ define([
 	'jquery', 
 	'backbone', 
 	'underscore',
-	'text-loader!components/segmentBuilder/tpl/parentTpl.html',
-	'main/services/RemoteService',
+	'text!components/segmentBuilder/tpl/parentTpl.html',
+	'services/RemoteService',
 	'components/segmentBuilder/model/lookAlikeModel',
 	'components/localstorage/LocalStorage',
-	"main/services/CacheService",
-	"main/services/AccountService",
-	"main/services/RefDataService",
+	"services/CacheService",
+	"services/AccountService",
+	"services/RefDataService",
 	"modules/tags/util/Util"
 ],
 

@@ -2,8 +2,8 @@ define([
         'jquery',
         'backbone',
         'underscore',
-        'text-loader!components/segmentBuilderMultiSelect/tpl/multiSelectTpl.html',
-        'main/services/RemoteService'       
+        'text!components/segmentBuilderMultiSelect/tpl/multiSelectTpl.html',
+        'services/RemoteService'       
     ],
 
     function($, Backbone, _, MultiSelectionTpl, RemoteService) {

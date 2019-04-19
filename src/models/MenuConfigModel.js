@@ -1,7 +1,7 @@
 define(
 		['underscore',
 		 'backbone',
-		 'main/services/CacheService'
+		 'services/CacheService'
 		 ] ,
 
 		 function(_, Backbone, CacheService){
@@ -12,7 +12,7 @@ define(
 		 	var menuCollection = this.canShowNewMenu && this.multilevelMenu ? 'menu.json' : 'menu-old.json';
 			var MenuConfigModel = Backbone.Model.extend({
 
-				url : "static/js/main/data/"+ menuCollection +"?version="+CacheService.get("currentVersion"),
+				url : "static/js/data/"+ menuCollection +"?version="+CacheService.get("currentVersion"),
 
 				initialize : function(options){
 					options = options || {};

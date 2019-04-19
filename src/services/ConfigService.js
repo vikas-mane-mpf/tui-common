@@ -1,5 +1,5 @@
-define("ConfigService1", ['underscore', 'jquery', 'backbone', 'main/services/CacheService', 'main/services/RemoteService'], 
-function(_, $, Backbone, CacheService, RemoteService, Abcdf){
+define(['underscore', 'jquery', 'backbone', 'services/CacheService', 'services/RemoteService'], 
+function(_, $, Backbone, CacheService, RemoteService){
 
 	var ConfigService = function(){}
 	
@@ -13,7 +13,6 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 		},
 		
 		getConfig : function(id){
-			debugger
 			return this.configs[id];
 		},
 		
@@ -101,7 +100,7 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 		
 		fetchConstantsConfig : function(){
 			return RemoteService.ajax({
-                //url : "/static/js/main/data/constants.json",
+                //url : "/static/js/data/constants.json",
 				url : "getConfig.htm",
 				data: JSON.stringify({"type": "constants"})
 			}).then(function(response){

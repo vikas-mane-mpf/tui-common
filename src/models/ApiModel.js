@@ -1,7 +1,7 @@
 /*define([
         'backbone',
         'epoxy',
-        'main/services/CacheService'
+        'services/CacheService'
     ],
     function(Backbone, Epoxy, CacheService) {
         var ApiModel = Backbone.Epoxy.Model.extend({

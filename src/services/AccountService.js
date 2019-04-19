@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'main/services/CacheService', 'main/collections/AccountCollection'], 
+define(['underscore', 'jquery', 'backbone', 'services/CacheService', 'collections/AccountCollection'], 
 function(_, $, Backbone, CacheService, AccountCollection){
 
 	var AccountService = function(){}
@@ -55,6 +55,7 @@ function(_, $, Backbone, CacheService, AccountCollection){
 			if(account){
 				this.currentAccount = account;
 				CacheService.set("accountId", account.id);
+				CacheService.set("currentAccountStatus", account.get("status"));
 				CacheService.set("agencyCode", account.get('agencyCode'));
 				this.trigger("accountChanged");
 			}

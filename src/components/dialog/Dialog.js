@@ -1,7 +1,7 @@
  define(["jquery",
          "backbone",
          "underscore",
-         "text-loader!components/dialog/DialogTpl.html"
+         "text!components/dialog/DialogTpl.html"
      ],
      function($, Backbone, _, dialogTpl) {
 

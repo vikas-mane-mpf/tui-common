@@ -1,6 +1,6 @@
 define(['underscore','backbone','jquery',
     'components/stackedBar/StackedBarView',
-    'text-loader!components/stackedBar/AudienceSizeBarViewTpl.html',
+    'text!components/stackedBar/AudienceSizeBarViewTpl.html',
     'components/stackedBar/AudienceSizeBarModel',
     'numeral'],
   function(_, Backbone, $, StackedBarView, audienceSizeBarViewTpl, AudienceSizeBarModel, numeral){

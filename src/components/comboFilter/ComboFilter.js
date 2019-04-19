@@ -1,4 +1,4 @@
-define(['jquery', 'backbone', "underscore", "text-loader!components/comboFilter/ComboFilterTpl.html", "i18next"],
+define(['jquery', 'backbone', "underscore", "text!components/comboFilter/ComboFilterTpl.html", "i18next"],
 		function($, Backbone, _, filterTpl, i18next){
 
 	var view = Backbone.View.extend({

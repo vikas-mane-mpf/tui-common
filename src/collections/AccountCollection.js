@@ -1,10 +1,10 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'main/models/AccountModel'],
-function($, Backbone, _,AccountModel) {
+	'jquery', 'backbone', 'underscore', 'models/AccountModel', 'services/SecurityService'],
+function($, Backbone, _,AccountModel, SecurityService) {
 	var Collection = Backbone.Collection.extend({
 		model : AccountModel,
 		  url: "getApiData.htm",
-		//url: "static/js/main/data/agencycode.json",
+		//url: "static/js/data/agencycode.json",
 
 		initialize: function(){
 		
@@ -13,12 +13,11 @@ function($, Backbone, _,AccountModel) {
 		
 		parse: function(response){
 			//console.log(response);
-			var SecurityService = require("main/services/SecurityService");
-			var resp = [],
-				accounts = _.filter(response.accounts, function(account){
+			var resp = [];
+			var accounts = _.filter(response.accounts, function(account){
 				    return SecurityService.hasAccountAccess(account.id);
 				});
-            console.log("accounts", accounts, response.accounts, SecurityService.accountIds);
+			console.log("accounts", accounts, response.accounts, SecurityService.accountIds);
 			for(var i=0;i<accounts.length;i++){
 				var obj = accounts[i];
 				obj["text"] = accounts[i]["name"];
