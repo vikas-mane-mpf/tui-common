@@ -21,5 +21,7 @@
       "modules/home/utils/utils": "empty:"
   },
   include:["main"],
-  out: "../dist/main.js"
+  out: "../dist/main.js",
+  generateSourceMaps: true,
+  optimize: "none"
 }
