@@ -5,9 +5,7 @@ const glob = require("glob")
 module.exports = {
     mode: "development",
     context: path.resolve(__dirname, '../src'),
-    entry: {
-        "bundle.js": glob.sync("./src/**/**.?(js|css)").map(f => path.resolve("./", f)),
-    },
+    entry: "../dist/main.js",
     output: {
         libraryTarget: "amd",
         filename: "index.js",
