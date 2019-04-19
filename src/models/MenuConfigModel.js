@@ -1,7 +1,7 @@
 define(
 		['underscore',
 		 'backbone',
-		 'services/CacheService'
+		 'main/services/CacheService'
 		 ] ,
 
 		 function(_, Backbone, CacheService){

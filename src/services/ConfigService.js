@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'services/CacheService', 'services/RemoteService'], 
+define(['underscore', 'jquery', 'backbone', 'main/services/CacheService', 'main/services/RemoteService'], 
 function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 
 	var ConfigService = function(){}

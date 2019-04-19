@@ -1,5 +1,5 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'models/ModelReportingModel'],
+	'jquery', 'backbone', 'underscore', 'main/models/ModelReportingModel'],
 function($, Backbone, _,ModelReportingModel) {
 	var Collection = Backbone.Collection.extend({
 		model : ModelReportingModel,

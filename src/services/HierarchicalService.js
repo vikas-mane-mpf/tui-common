@@ -3,8 +3,8 @@ define(
         'underscore',
         'jquery',
         'backbone',
-        'services/RemoteService',
-        'services/AccountService'
+        'main/services/RemoteService',
+        'main/services/AccountService'
     ],
     function(
         _,

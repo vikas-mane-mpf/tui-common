@@ -1,8 +1,8 @@
 define([
         'jquery', 'backbone', 'underscore',
         'text!components/overlayWithSections/tpl/tpl.html',
-        'services/HierarchicalService',
-        "services/ConfigService",
+        'main/services/HierarchicalService',
+        "main/services/ConfigService",
         'i18next'
     ],
 

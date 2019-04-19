@@ -1,18 +1,18 @@
 define(function (require) {
     'use strict';
-    var AccountService = require("services/AccountService");
-    var CacheService = require("services/CacheService");
-    var ConfigService = require("services/ConfigService");
-    var ErrorService = require("services/ErrorService");
-    var FeatureToggleService = require("services/FeatureToggleService");
-    var FileDownloadService = require("services/FileDownloadService");
-    var FrameService = require("services/FrameService");
-    var HierarchicalService = require("services/HierarchicalService");
-    var MenuService = require("services/MenuService");
-    var RefDataService = require("services/RefDataService");
-    var SecurityService = require("services/SecurityService");
-    var TagRService = require("services/TagRService");
-    var UserService = require("services/UserService");
+    var AccountService = require("main/services/AccountService");
+    var CacheService = require("main/services/CacheService");
+    var ConfigService = require("main/services/ConfigService");
+    var ErrorService = require("main/services/ErrorService");
+    var FeatureToggleService = require("main/services/FeatureToggleService");
+    var FileDownloadService = require("main/services/FileDownloadService");
+    var FrameService = require("main/services/FrameService");
+    var HierarchicalService = require("main/services/HierarchicalService");
+    var MenuService = require("main/services/MenuService");
+    var RefDataService = require("main/services/RefDataService");
+    var SecurityService = require("main/services/SecurityService");
+    var TagRService = require("main/services/TagRService");
+    var UserService = require("main/services/UserService");
 
 
     var behaviorChart = require("components/behaviorChart/behaviorChart");
@@ -44,12 +44,12 @@ define(function (require) {
     var StatusIcon = require("components/statusIcon/StatusIcon");
     var URLVars = require("components/URLVars/URLVars");
 
-    var Cookie = require("utils/Cookie");
-    var Extensions = require("utils/Extensions");
-    var RemotingUtil = require("utils/RemotingUtil");
-    var ValidationUtil = require("utils/ValidationUtil");
+    var Cookie = require("main/utils/Cookie");
+    var Extensions = require("main/utils/Extensions");
+    var RemotingUtil = require("main/utils/RemotingUtil");
+    var ValidationUtil = require("main/utils/ValidationUtil");
 
-    var EventDispatcher = require("events/EventDispatcher");
+    var EventDispatcher = require("main/events/EventDispatcher");
 
     //Return the module value.
     return {

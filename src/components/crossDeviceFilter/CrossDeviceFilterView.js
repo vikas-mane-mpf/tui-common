@@ -1,6 +1,6 @@
 define(["underscore", "jquery", "backbone",
         "text!components/crossDeviceFilter/crossDeviceFilterTpl.html",
-        "services/AccountService", "jqueryUI"],
+        "main/services/AccountService", "jqueryUI"],
    function(_, $, Backbone,
 		   CrossDeviceFilterTpl,
 		   AccountService){

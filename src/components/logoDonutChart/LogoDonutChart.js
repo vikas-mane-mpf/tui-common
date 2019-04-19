@@ -8,7 +8,7 @@ define(
         "underscore",
         "backbone",
         "numeral",
-        "services/AccountService",
+        "main/services/AccountService",
         "modules/home/utils/utils",
         "text!components/logoDonutChart/LogoDonutChartTpl.html",
         "components/logoDonutChart/LogoDonutChartModel",

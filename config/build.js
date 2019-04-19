@@ -1,7 +1,9 @@
 {
-  baseUrl: "../src",
+  baseUrl: "../",
   paths:{
-      "main": "../src/main",
+      "app": "src/main",
+      "main": "src",
+      "components": "src/components",
       
       jquery: "empty:",
       underscore: "empty:",
@@ -20,8 +22,8 @@
       "modules/tags/util/Util": "empty:",
       "modules/home/utils/utils": "empty:"
   },
-  include:["main"],
+  include:["app"],
   out: "../dist/main.js",
   generateSourceMaps: true,
-  optimize: "none"
+  optimize: "uglify"
 }

@@ -3,9 +3,9 @@ define([
 	'backbone', 
 	'underscore',
 	'text!components/segmentBuilderCustomVariable/tpl/parentTpl.html',
-	'services/RemoteService',
-	"services/RefDataService",
-	"services/CacheService"],
+	'main/services/RemoteService',
+	"main/services/RefDataService",
+	"main/services/CacheService"],
 
 function($, Backbone, _,parentTpl,RemoteService, RefDataService, CacheService){
 	

@@ -1,4 +1,4 @@
-define(["services/AccountService", "services/ConfigService"],
+define(["main/services/AccountService", "main/services/ConfigService"],
 function(AccountService, ConfigService){
 	var FeatureToggleService = {
 
