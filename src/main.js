@@ -54,11 +54,28 @@ define(function (require) {
     //Return the module value.
     return {
         services: {
-            AccountService: AccountService,
-            CacheService: CacheService,
-            ConfigService: ConfigService,
-            ErrorService: ErrorService,
-            LocalStorage: LocalStorage
+            AccountService : AccountService
+            CacheService :CacheService,
+            ConfigService :ConfigService,
+            ErrorService :ErrorService,
+            FeatureToggleService :FeatureToggleService,
+            FileDownloadService :FileDownloadService,
+            FrameService :FrameService,
+            HierarchicalService :HierarchicalService,
+            MenuService :MenuService,
+            RefDataService :RefDataService,
+            SecurityService :SecurityService,
+            TagRService :TagRService,
+            UserService :UserService
         },
+        utils:{
+            Cookie : Cookie,
+            Extensions : Extensions,
+            RemotingUtil : RemotingUtil,
+            ValidationUtil : ValidationUtil
+        },
+        events:{
+            EventDispatcher: EventDispatcher
+        }
     };
 });
