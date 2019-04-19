@@ -54,7 +54,7 @@ define(function (require) {
     //Return the module value.
     return {
         services: {
-            AccountService : AccountService
+            AccountService : AccountService,
             CacheService :CacheService,
             ConfigService :ConfigService,
             ErrorService :ErrorService,
