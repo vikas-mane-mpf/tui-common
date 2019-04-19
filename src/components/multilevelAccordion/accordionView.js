@@ -2,7 +2,7 @@
          "backbone",
          "underscore",
          "i18next",
-         "text-loader!components/multilevelAccordion/accordionTpl.html"
+         "text!components/multilevelAccordion/accordionTpl.html"
      ],
      function($, Backbone, _, i18next, accordionTpl) {
 

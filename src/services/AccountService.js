@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'main/services/CacheService', 'main/collections/AccountCollection'], 
+define(['underscore', 'jquery', 'backbone', 'services/CacheService', 'collections/AccountCollection'], 
 function(_, $, Backbone, CacheService, AccountCollection){
 
 	var AccountService = function(){}

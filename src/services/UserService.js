@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'main/models/UserModel', 'main/services/RemoteService', 'main/services/CacheService', 'main/services/SecurityService'],
+define(['underscore', 'jquery', 'backbone', 'models/UserModel', 'services/RemoteService', 'services/CacheService', 'services/SecurityService'],
 function(_, $, Backbone, UserModel, RemoteService, CacheService, SecurityService){
 
 	var UserService = function(){        	

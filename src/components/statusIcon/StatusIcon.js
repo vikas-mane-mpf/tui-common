@@ -1,7 +1,7 @@
  define(["jquery",
          "backbone",
          "underscore",
-         "text-loader!components/statusIcon/StatusIconTpl.html"
+         "text!components/statusIcon/StatusIconTpl.html"
      ],
      function($, Backbone, _, statusDropdownTpl) {
 

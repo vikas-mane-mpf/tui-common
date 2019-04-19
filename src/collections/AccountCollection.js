@@ -1,5 +1,5 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'main/models/AccountModel'],
+	'jquery', 'backbone', 'underscore', 'models/AccountModel'],
 function($, Backbone, _,AccountModel) {
 	var Collection = Backbone.Collection.extend({
 		model : AccountModel,
@@ -13,7 +13,7 @@ function($, Backbone, _,AccountModel) {
 		
 		parse: function(response){
 			//console.log(response);
-			var SecurityService = require("main/services/SecurityService");
+			var SecurityService = require("services/SecurityService");
 			var resp = [],
 				accounts = _.filter(response.accounts, function(account){
 				    return SecurityService.hasAccountAccess(account.id);

@@ -2,10 +2,10 @@ define([
 	'jquery', 
 	'backbone', 
 	'underscore',
-	'text-loader!components/segmentBuilderCustomVariable/tpl/parentTpl.html',
-	'main/services/RemoteService',
-	"main/services/RefDataService",
-	"main/services/CacheService"],
+	'text!components/segmentBuilderCustomVariable/tpl/parentTpl.html',
+	'services/RemoteService',
+	"services/RefDataService",
+	"services/CacheService"],
 
 function($, Backbone, _,parentTpl,RemoteService, RefDataService, CacheService){
 	
