@@ -30,6 +30,26 @@ define(function (require) {
     var StatusIcon = require("components/statusIcon/StatusIcon");
     var URLVars = require("components/URLVars/URLVars");
 
+    var AccountCollection = require("collections/AccountCollection");
+    var AdvertiserCollection = require("collections/AdvertiserCollection");
+    var DeliveryPlatformCollection = require("collections/DeliveryPlatformCollection");
+    var AgencyCollection = require("collections/AgencyCollection");
+    var CoreAgencyCollection = require("collections/CoreAgencyCollection");
+    var GeoCollection = require("collections/GeoCollection");
+    var TPAccountsCollection = require("collections/TPAccountsCollection");
+    var ModelReportingCollection = require("collections/ModelReportingCollection");
+
+    var AdvertiserModel = require("models/AdvertiserModel");
+    var AccountModel = require("models/AccountModel");
+    var AccessTokenModel = require("models/AccessTokenModel");
+    var AgencyModel = require("models/AgencyModel");
+    var DeliveryPlatformModel = require("models/DeliveryPlatformModel");
+    var GeoModel = require("models/GeoModel");
+    var ModelReportingModel = require("models/ModelReportingModel");
+    var TPAccountsModel = require("models/TPAccountsModel");
+    var MenuConfigModel = require("models/MenuConfigModel");
+    var UserModel = require("models/UserModel");
+    
     var CacheService = require("services/CacheService");
     var ConfigService = require("services/ConfigService");
     var ErrorService = require("services/ErrorService");
@@ -52,25 +72,7 @@ define(function (require) {
 
     var EventDispatcher = require("events/EventDispatcher");
 
-    var AccountCollection = require("collections/AccountCollection");
-    var AdvertiserCollection = require("collections/AdvertiserCollection");
-    var DeliveryPlatformCollection = require("collections/DeliveryPlatformCollection");
-    var AgencyCollection = require("collections/AgencyCollection");
-    var CoreAgencyCollection = require("collections/CoreAgencyCollection");
-    var GeoCollection = require("collections/GeoCollection");
-    var TPAccountsCollection = require("collections/TPAccountsCollection");
-    var ModelReportingCollection = require("collections/ModelReportingCollection");
-
-    var AdvertiserModel = require("models/AdvertiserModel");
-    var AccountModel = require("models/AccountModel");
-    var AccessTokenModel = require("models/AccessTokenModel");
-    var AgencyModel = require("models/AgencyModel");
-    var DeliveryPlatformModel = require("models/DeliveryPlatformModel");
-    var GeoModel = require("models/GeoModel");
-    var ModelReportingModel = require("models/ModelReportingModel");
-    var TPAccountsModel = require("models/TPAccountsModel");
-    var MenuConfigModel = require("models/MenuConfigModel");
-    var UserModel = require("models/UserModel");
+   
 
     //Return the module value.
     var obj = {
