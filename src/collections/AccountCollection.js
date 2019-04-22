@@ -13,7 +13,7 @@ function($, Backbone, _,AccountModel) {
 		
 		parse: function(response){
 			//console.log(response);
-			var resp = [],
+			var resp = [];
 			// 	accounts = _.filter(response.accounts, function(account){
 			// 	    return SecurityService.hasAccountAccess(account.id);
 			// 	});
