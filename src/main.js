@@ -14,7 +14,6 @@ define(function (require) {
     var TagRService = require("main/services/TagRService");
     var UserService = require("main/services/UserService");
 
-
     var behaviorChart = require("components/behaviorChart/behaviorChart");
     var RelevancyChartView = require("components/bubble/bubbleChart");
     var ComboFilter = require("components/comboFilter/ComboFilter");
@@ -52,30 +51,79 @@ define(function (require) {
     var EventDispatcher = require("main/events/EventDispatcher");
 
     //Return the module value.
-    return {
+    var obj = {
+        components: {
+            BehaviorChart: behaviorChart,
+            RelevancyChartView: RelevancyChartView,
+            ComboFilter: ComboFilter,
+            DigitalBehaviors: DigitalBehaviors,
+            Activities: Activities,
+            ListItems: ListItems,
+            Technographics: Technographics,
+            CrossDeviceFilterView: CrossDeviceFilterView,
+            DependentModelView: DependentModelView,
+            Dialog: Dialog,
+            FilterManager: FilterManager,
+            LocalStorage: LocalStorage,
+            logoDonutChart: logoDonutChart,
+            AccordionView: AccordionView,
+            OverlayWithSectionsView: OverlayWithSectionsView,
+            SegmentBuilder: SegmentBuilder,
+            SegmentBuilderCustomVariable: SegmentBuilderCustomVariable,
+            SegmentBuilderMultiSelect: SegmentBuilderMultiSelect,
+            AudienceSizeBarMobile: AudienceSizeBarMobile,
+            StackedBarMobile: StackedBarMobile,
+            AudienceSizeBar: AudienceSizeBar,
+            StackedBar: StackedBar,
+            HMLBar: HMLBar,
+            HMLStackedBar: HMLStackedBar,
+            StatusDropdown: StatusDropdown,
+            SubscriptionToggle: SubscriptionToggle,
+            StatusIcon: StatusIcon,
+            URLVars: URLVars
+        },
         services: {
-            AccountService : AccountService,
-            CacheService :CacheService,
-            ConfigService :ConfigService,
-            ErrorService :ErrorService,
-            FeatureToggleService :FeatureToggleService,
-            FileDownloadService :FileDownloadService,
-            FrameService :FrameService,
-            HierarchicalService :HierarchicalService,
-            MenuService :MenuService,
-            RefDataService :RefDataService,
-            SecurityService :SecurityService,
-            TagRService :TagRService,
-            UserService :UserService
+            AccountService: AccountService,
+            CacheService: CacheService,
+            ConfigService: ConfigService,
+            ErrorService: ErrorService,
+            FeatureToggleService: FeatureToggleService,
+            FileDownloadService: FileDownloadService,
+            FrameService: FrameService,
+            HierarchicalService: HierarchicalService,
+            MenuService: MenuService,
+            RefDataService: RefDataService,
+            SecurityService: SecurityService,
+            TagRService: TagRService,
+            UserService: UserService
         },
-        utils:{
-            Cookie : Cookie,
-            Extensions : Extensions,
-            RemotingUtil : RemotingUtil,
-            ValidationUtil : ValidationUtil
+        utils: {
+            Cookie: Cookie,
+            Extensions: Extensions,
+            RemotingUtil: RemotingUtil,
+            ValidationUtil: ValidationUtil
         },
-        events:{
+        events: {
             EventDispatcher: EventDispatcher
         }
     };
+    
+    
+    return (function getModuleByResourceQuery() {
+        if(!__resourceQuery){
+            return obj;
+        }
+
+        if(__resourceQuery.indexOf("/") != -1){
+            var resourcePath = __resourceQuery.split("/");
+            resourcePath[0] = resourcePath[0].split("?")[1];
+            var resolvedObj;
+            while(resourcePath.length){
+                resolvedObj = obj[resourcePath.shift()];
+            }
+            return resolvedObj;
+        }else{
+            return obj[__resourceQuery.split("?")[1]];
+        }
+    })();
 });
