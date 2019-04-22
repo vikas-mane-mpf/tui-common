@@ -1,5 +1,5 @@
 define(['underscore', 'jquery', 'backbone', 'services/CacheService', 'services/RemoteService'], 
-function(_, $, Backbone, CacheService, RemoteService, Abcdf){
+function(_, $, Backbone, CacheService, RemoteService){
 
 	var ConfigService = function(){}
 	
@@ -13,7 +13,6 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 		},
 		
 		getConfig : function(id){
-			debugger
 			return this.configs[id];
 		},
 		
