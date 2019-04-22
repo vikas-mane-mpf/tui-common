@@ -1,6 +1,5 @@
 define(function (require) {
     'use strict';
-    var SecurityService = require("services/SecurityService");
     var AccountService = require("services/AccountService");
     var CacheService = require("services/CacheService");
     var ConfigService = require("services/ConfigService");
@@ -11,6 +10,7 @@ define(function (require) {
     var HierarchicalService = require("services/HierarchicalService");
     var MenuService = require("services/MenuService");
     var RefDataService = require("services/RefDataService");
+    var SecurityService = require("services/SecurityService");
     var TagRService = require("services/TagRService");
     var UserService = require("services/UserService");
 
