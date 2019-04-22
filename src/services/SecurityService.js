@@ -1,5 +1,5 @@
-define(['underscore', 'jquery', 'backbone', 'utils/Cookie', 'services/AccountService', 'services/RemoteService',  'services/CacheService', 'models/AccessTokenModel'],
-function(_, $, Backbone, CookieUtil, AccountService, RemoteService, CacheService, AccessTokenModel){
+define(['underscore', 'jquery', 'backbone', 'utils/Cookie', 'services/RemoteService',  'services/CacheService', 'models/AccessTokenModel'],
+function(_, $, Backbone, CookieUtil, RemoteService, CacheService, AccessTokenModel){
 	
 	var SecurityService = function(){}
 
@@ -64,8 +64,8 @@ function(_, $, Backbone, CookieUtil, AccountService, RemoteService, CacheService
                         });
                     })
 
-                    this.permissions = permissions;
-                    var allAccounts = AccountService.getAccountCollection();
+					this.permissions = permissions;
+					
                     this.accountIds = _.uniq(_.pluck(permissions, "accountKey"));
                     if(!this.accountIds.length)
                         return $.Deferred().reject();
@@ -97,7 +97,7 @@ function(_, $, Backbone, CookieUtil, AccountService, RemoteService, CacheService
 			if(!this.permissionsByKey)
 				return false;
 			
-			if(checkAccountStatus && AccountService.getCurrentAccount().get("status") != "A")
+			if(checkAccountStatus && CacheService.get("currentAccountStatus") != "A")
 				return false;
 
 			var permissions = this.permissionsByKey[key] || {}
@@ -115,8 +115,8 @@ function(_, $, Backbone, CookieUtil, AccountService, RemoteService, CacheService
 		},
 		
 		updatePermissions : function(){
-			var account = AccountService.getCurrentAccount();
-			var current = _.where(this.permissions, {accountKey : String(account.id)});
+			var account = CacheService.get("accountId"); //AccountService.getCurrentAccount();
+			var current = _.where(this.permissions, {accountKey : String(account)});
 			this.permissionsByKey = _.indexBy(current, "resource_type");
 			this.trigger("permissionsChanged");
 		}

@@ -55,6 +55,7 @@ function(_, $, Backbone, CacheService, AccountCollection){
 			if(account){
 				this.currentAccount = account;
 				CacheService.set("accountId", account.id);
+				CacheService.set("currentAccountStatus", account.get("status"));
 				CacheService.set("agencyCode", account.get('agencyCode'));
 				this.trigger("accountChanged");
 			}
