@@ -2,9 +2,9 @@
   "name": "mplatform-common",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "build": "node config/r.js -o config/build.js && webpack --config config/webpack.config.js",
+    "build": "node config/r.js -o config/build.js",
     "prebuild": "rm -rf dist",
     "prepare": "yarn build"
   },
