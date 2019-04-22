@@ -3,7 +3,7 @@ define([
         'backbone',
         'underscore',
         'text!components/segmentBuilderMultiSelect/tpl/multiSelectTpl.html',
-        'main/services/RemoteService'       
+        'common/services/RemoteService'       
     ],
 
     function($, Backbone, _, MultiSelectionTpl, RemoteService) {

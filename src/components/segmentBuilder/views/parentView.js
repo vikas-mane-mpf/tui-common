@@ -3,12 +3,12 @@ define([
 	'backbone', 
 	'underscore',
 	'text!components/segmentBuilder/tpl/parentTpl.html',
-	'main/services/RemoteService',
+	'common/services/RemoteService',
 	'components/segmentBuilder/model/lookAlikeModel',
 	'components/localstorage/LocalStorage',
-	"main/services/CacheService",
-	"main/services/AccountService",
-	"main/services/RefDataService",
+	"common/services/CacheService",
+	"common/services/AccountService",
+	"common/services/RefDataService",
 	"modules/tags/util/Util"
 ],
 

@@ -1,18 +1,18 @@
 define(function (require) {
     'use strict';
-    var SecurityService = require("main/services/SecurityService");
-    var AccountService = require("main/services/AccountService");
-    var CacheService = require("main/services/CacheService");
-    var ConfigService = require("main/services/ConfigService");
-    var ErrorService = require("main/services/ErrorService");
-    var FeatureToggleService = require("main/services/FeatureToggleService");
-    var FileDownloadService = require("main/services/FileDownloadService");
-    var FrameService = require("main/services/FrameService");
-    var HierarchicalService = require("main/services/HierarchicalService");
-    var MenuService = require("main/services/MenuService");
-    var RefDataService = require("main/services/RefDataService");
-    var TagRService = require("main/services/TagRService");
-    var UserService = require("main/services/UserService");
+    var SecurityService = require("common/services/SecurityService");
+    var AccountService = require("common/services/AccountService");
+    var CacheService = require("common/services/CacheService");
+    var ConfigService = require("common/services/ConfigService");
+    var ErrorService = require("common/services/ErrorService");
+    var FeatureToggleService = require("common/services/FeatureToggleService");
+    var FileDownloadService = require("common/services/FileDownloadService");
+    var FrameService = require("common/services/FrameService");
+    var HierarchicalService = require("common/services/HierarchicalService");
+    var MenuService = require("common/services/MenuService");
+    var RefDataService = require("common/services/RefDataService");
+    var TagRService = require("common/services/TagRService");
+    var UserService = require("common/services/UserService");
 
     var behaviorChart = require("components/behaviorChart/behaviorChart");
     var RelevancyChartView = require("components/bubble/bubbleChart");
@@ -43,32 +43,32 @@ define(function (require) {
     var StatusIcon = require("components/statusIcon/StatusIcon");
     var URLVars = require("components/URLVars/URLVars");
 
-    var Cookie = require("main/utils/Cookie");
-    var Extensions = require("main/utils/Extensions");
-    var RemotingUtil = require("main/utils/RemotingUtil");
-    var ValidationUtil = require("main/utils/ValidationUtil");
+    var Cookie = require("common/utils/Cookie");
+    var Extensions = require("common/utils/Extensions");
+    var RemotingUtil = require("common/utils/RemotingUtil");
+    var ValidationUtil = require("common/utils/ValidationUtil");
 
-    var EventDispatcher = require("main/events/EventDispatcher");
+    var EventDispatcher = require("common/events/EventDispatcher");
 
-    var AccountCollection = require("main/collections/AccountCollection");
-    var AdvertiserCollection = require("main/collections/AdvertiserCollection");
-    var DeliveryPlatformCollection = require("main/collections/DeliveryPlatformCollection");
-    var AgencyCollection = require("main/collections/AgencyCollection");
-    var CoreAgencyCollection = require("main/collections/CoreAgencyCollection");
-    var GeoCollection = require("main/collections/GeoCollection");
-    var TPAccountsCollection = require("main/collections/TPAccountsCollection");
-    var ModelReportingCollection = require("main/collections/ModelReportingCollection");
+    var AccountCollection = require("common/collections/AccountCollection");
+    var AdvertiserCollection = require("common/collections/AdvertiserCollection");
+    var DeliveryPlatformCollection = require("common/collections/DeliveryPlatformCollection");
+    var AgencyCollection = require("common/collections/AgencyCollection");
+    var CoreAgencyCollection = require("common/collections/CoreAgencyCollection");
+    var GeoCollection = require("common/collections/GeoCollection");
+    var TPAccountsCollection = require("common/collections/TPAccountsCollection");
+    var ModelReportingCollection = require("common/collections/ModelReportingCollection");
 
-    var AdvertiserModel = require("main/models/AdvertiserModel");
-    var AccountModel = require("main/models/AccountModel");
-    var AccessTokenModel = require("main/models/AccessTokenModel");
-    var AgencyModel = require("main/models/AgencyModel");
-    var DeliveryPlatformModel = require("main/models/DeliveryPlatformModel");
-    var GeoModel = require("main/models/GeoModel");
-    var ModelReportingModel = require("main/models/ModelReportingModel");
-    var TPAccountsModel = require("main/models/TPAccountsModel");
-    var MenuConfigModel = require("main/models/MenuConfigModel");
-    var UserModel = require("main/models/UserModel");
+    var AdvertiserModel = require("common/models/AdvertiserModel");
+    var AccountModel = require("common/models/AccountModel");
+    var AccessTokenModel = require("common/models/AccessTokenModel");
+    var AgencyModel = require("common/models/AgencyModel");
+    var DeliveryPlatformModel = require("common/models/DeliveryPlatformModel");
+    var GeoModel = require("common/models/GeoModel");
+    var ModelReportingModel = require("common/models/ModelReportingModel");
+    var TPAccountsModel = require("common/models/TPAccountsModel");
+    var MenuConfigModel = require("common/models/MenuConfigModel");
+    var UserModel = require("common/models/UserModel");
 
     //Return the module value.
     var obj = {

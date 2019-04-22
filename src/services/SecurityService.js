@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'main/utils/Cookie', 'main/services/AccountService', 'main/services/RemoteService',  'main/services/CacheService', 'main/models/AccessTokenModel'],
+define(['underscore', 'jquery', 'backbone', 'common/utils/Cookie', 'common/services/AccountService', 'common/services/RemoteService',  'common/services/CacheService', 'common/models/AccessTokenModel'],
 function(_, $, Backbone, CookieUtil, AccountService, RemoteService, CacheService, AccessTokenModel){
 	
 	var SecurityService = function(){}

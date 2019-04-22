@@ -1,4 +1,4 @@
-define(["backbone", "main/utils/Cookie", "moment"], function(Backbone, CookieUtil, moment){
+define(["backbone", "common/utils/Cookie", "moment"], function(Backbone, CookieUtil, moment){
     var AccessTokenModel = Backbone.Model.extend({
 
         timeToExpiry : function(units){

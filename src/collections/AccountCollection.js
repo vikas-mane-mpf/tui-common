@@ -1,10 +1,10 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'main/models/AccountModel'],
+	'jquery', 'backbone', 'underscore', 'common/models/AccountModel'],
 function($, Backbone, _,AccountModel) {
 	var Collection = Backbone.Collection.extend({
 		model : AccountModel,
 		  url: "getApiData.htm",
-		//url: "static/js/main/data/agencycode.json",
+		//url: "static/js/common/data/agencycode.json",
 
 		initialize: function(){
 		
@@ -13,7 +13,7 @@ function($, Backbone, _,AccountModel) {
 		
 		parse: function(response){
 			//console.log(response);
-			var SecurityService = require("main/services/SecurityService");
+			var SecurityService = require("common/services/SecurityService");
 			var resp = [],
 				accounts = _.filter(response.accounts, function(account){
 				    return SecurityService.hasAccountAccess(account.id);

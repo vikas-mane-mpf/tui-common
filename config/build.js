@@ -2,7 +2,7 @@
   baseUrl: "../",
   paths:{
       "app": "src/main",
-      "main": "src",
+      "common": "src",
       "components": "src/components",
       
       jquery: "empty:",

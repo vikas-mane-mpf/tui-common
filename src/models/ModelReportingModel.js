@@ -1,4 +1,4 @@
-define(["backbone", 'main/services/RemoteService'], function(Backbone,RemoteService){
+define(["backbone", 'common/services/RemoteService'], function(Backbone,RemoteService){
   var ModelReportingtModel = Backbone.Model.extend({
 	url : 'getApiData.htm',
 

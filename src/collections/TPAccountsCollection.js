@@ -1,5 +1,5 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'main/models/TPAccountsModel'],
+	'jquery', 'backbone', 'underscore', 'common/models/TPAccountsModel'],
 function($, Backbone, _,TPAccountsModel) {
 	var Collection = Backbone.Collection.extend({
 
