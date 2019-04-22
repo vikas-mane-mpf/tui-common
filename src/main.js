@@ -118,9 +118,9 @@ define(function (require) {
         if(__resourceQuery.indexOf("/") != -1){
             var resourcePath = __resourceQuery.split("/");
             resourcePath[0] = resourcePath[0].split("?")[1];
-            var resolvedObj;
+            var resolvedObj = obj;
             while(resourcePath.length){
-                resolvedObj = obj[resourcePath.shift()];
+                resolvedObj = resolvedObj[resourcePath.shift()];
             }
             return resolvedObj;
         }else{
