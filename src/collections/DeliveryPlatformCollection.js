@@ -1,5 +1,5 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'common/models/DeliveryPlatformModel'],
+	'jquery', 'backbone', 'underscore', 'models/DeliveryPlatformModel'],
 function($, Backbone, _,DeliveryPlatformModel) {
 	var Collection = Backbone.Collection.extend({
 		model : DeliveryPlatformModel,

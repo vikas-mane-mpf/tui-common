@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'common/services/CacheService', 'common/services/RemoteService'], 
+define(['underscore', 'jquery', 'backbone', 'services/CacheService', 'services/RemoteService'], 
 function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 
 	var ConfigService = function(){}
@@ -101,7 +101,7 @@ function(_, $, Backbone, CacheService, RemoteService, Abcdf){
 		
 		fetchConstantsConfig : function(){
 			return RemoteService.ajax({
-                //url : "/static/js/common/data/constants.json",
+                //url : "/static/js/data/constants.json",
 				url : "getConfig.htm",
 				data: JSON.stringify({"type": "constants"})
 			}).then(function(response){

@@ -1,4 +1,4 @@
-define(["backbone", "i18next", "common/services/RemoteService"], function(Backbone, i18next, RemoteService){
+define(["backbone", "i18next", "services/RemoteService"], function(Backbone, i18next, RemoteService){
   var AdvertiserModel = Backbone.Model.extend({
 	  url : 'getApiData.htm',
 	  

@@ -1,4 +1,4 @@
-define(['underscore', 'jquery', 'backbone', 'common/models/MenuConfigModel', 'common/services/SecurityService', 'common/services/FeatureToggleService', 'common/services/ConfigService'],
+define(['underscore', 'jquery', 'backbone', 'models/MenuConfigModel', 'services/SecurityService', 'services/FeatureToggleService', 'services/ConfigService'],
 function(_, $, Backbone, MenuConfigModel, SecurityService, FeatureToggleService, ConfigService){
 
 	var MenuService = function(){}

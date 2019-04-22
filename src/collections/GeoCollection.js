@@ -1,5 +1,5 @@
 define( [
-	'jquery', 'backbone', 'underscore', 'common/models/GeoModel'],
+	'jquery', 'backbone', 'underscore', 'models/GeoModel'],
 function($, Backbone, _,GeoModel) {
 	var Collection = Backbone.Collection.extend({
 		model : GeoModel,
