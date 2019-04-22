@@ -25,5 +25,5 @@
   include:["app"],
   out: "../dist/main.js",
   generateSourceMaps: true,
-  optimize: "uglify"
+  optimize: "none"
 }
