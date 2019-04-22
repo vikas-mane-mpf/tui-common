@@ -110,7 +110,6 @@ define(function (require) {
     
     
     return (function getModuleByResourceQuery() {
-        debugger;
         if(!__resourceQuery){
             return obj;
         }
