@@ -1,5 +1,6 @@
 define(function (require) {
     'use strict';
+    var SecurityService = require("main/services/SecurityService");
     var AccountService = require("main/services/AccountService");
     var CacheService = require("main/services/CacheService");
     var ConfigService = require("main/services/ConfigService");
@@ -10,7 +11,6 @@ define(function (require) {
     var HierarchicalService = require("main/services/HierarchicalService");
     var MenuService = require("main/services/MenuService");
     var RefDataService = require("main/services/RefDataService");
-    var SecurityService = require("main/services/SecurityService");
     var TagRService = require("main/services/TagRService");
     var UserService = require("main/services/UserService");
 
@@ -50,8 +50,50 @@ define(function (require) {
 
     var EventDispatcher = require("main/events/EventDispatcher");
 
+    var AccountCollection = require("main/collections/AccountCollection");
+    var AdvertiserCollection = require("main/collections/AdvertiserCollection");
+    var DeliveryPlatformCollection = require("main/collections/DeliveryPlatformCollection");
+    var AgencyCollection = require("main/collections/AgencyCollection");
+    var CoreAgencyCollection = require("main/collections/CoreAgencyCollection");
+    var GeoCollection = require("main/collections/GeoCollection");
+    var TPAccountsCollection = require("main/collections/TPAccountsCollection");
+    var ModelReportingCollection = require("main/collections/ModelReportingCollection");
+
+    var AdvertiserModel = require("main/models/AdvertiserModel");
+    var AccountModel = require("main/models/AccountModel");
+    var AccessTokenModel = require("main/models/AccessTokenModel");
+    var AgencyModel = require("main/models/AgencyModel");
+    var DeliveryPlatformModel = require("main/models/DeliveryPlatformModel");
+    var GeoModel = require("main/models/GeoModel");
+    var ModelReportingModel = require("main/models/ModelReportingModel");
+    var TPAccountsModel = require("main/models/TPAccountsModel");
+    var MenuConfigModel = require("main/models/MenuConfigModel");
+    var UserModel = require("main/models/UserModel");
+
     //Return the module value.
     var obj = {
+        collections:{
+            AccountCollection: AccountCollection,
+            AdvertiserCollection: AdvertiserCollection,
+            DeliveryPlatformCollection: DeliveryPlatformCollection,
+            AgencyCollection: AgencyCollection,
+            CoreAgencyCollection: CoreAgencyCollection,
+            GeoCollection: GeoCollection,
+            TPAccountsCollection: TPAccountsCollection,
+            ModelReportingCollection: ModelReportingCollection
+        },
+        models:{
+            AccountModel : AccountModel,
+            AdvertiserModel : AdvertiserModel,
+            AccessTokenModel : AccessTokenModel,
+            AgencyModel : AgencyModel,
+            DeliveryPlatformModel : DeliveryPlatformModel,
+            GeoModel : GeoModel,
+            ModelReportingModel : ModelReportingModel,
+            TPAccountsModel : TPAccountsModel,
+            MenuConfigModel : MenuConfigModel,
+            UserModel : UserModel
+        },
         components: {
             BehaviorChart: behaviorChart,
             RelevancyChartView: RelevancyChartView,
