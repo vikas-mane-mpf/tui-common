@@ -17,7 +17,8 @@ function($, Backbone, _,AccountModel) {
 			// 	accounts = _.filter(response.accounts, function(account){
 			// 	    return SecurityService.hasAccountAccess(account.id);
 			// 	});
-            // console.log("accounts", accounts, response.accounts, SecurityService.accountIds);
+			// console.log("accounts", accounts, response.accounts, SecurityService.accountIds);
+			var accounts = response.accounts;
 			for(var i=0;i<accounts.length;i++){
 				var obj = accounts[i];
 				obj["text"] = accounts[i]["name"];
