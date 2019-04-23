@@ -2,28 +2,36 @@ define(function (require) {
     'use strict';
     
     var behaviorChart = require("components/behaviorChart/behaviorChart");
-    var RelevancyChartView = require("components/bubble/bubbleChart");
+    var bubbleChart = require("components/bubble/bubbleChart");
     var ComboFilter = require("components/comboFilter/ComboFilter");
     var DigitalBehaviors = require("components/consumerCluster/DigitalBehaviors");
     var Activities = require("components/consumerCluster/Activities");
     var ListItems = require("components/consumerCluster/ListItems");
     var Technographics = require("components/consumerCluster/Technographics");
+    var iconModel = require("components/consumerCluster/iconModel");
     var CrossDeviceFilterView = require("components/crossDeviceFilter/CrossDeviceFilterView");
     var DependentModelView = require("components/dependentModels/views/DependentModelView");
     var Dialog = require("components/dialog/Dialog");
     var FilterManager = require("components/filterManager/FilterManager");
     var LocalStorage = require("components/localstorage/LocalStorage");
     var logoDonutChart = require("components/logoDonutChart/LogoDonutChart");
-    var AccordionView = require("components/multilevelAccordion/accordionView");
+    var accordionView = require("components/multilevelAccordion/accordionView");
     var OverlayWithSectionsView = require("components/overlayWithSections/views/OverlayWithSectionsView");
+    var OverlayWithSectionsViewDataModel = require("components/overlayWithSections/model/dataModel");
     var SegmentBuilder = require("components/segmentBuilder/views/parentView");
+    var SegmentOverlayDataModel = require("components/segmentBuilder/model/dataModel");
     var SegmentBuilderCustomVariable = require("components/segmentBuilderCustomVariable/views/customVariableComponentView");
+    var CustomVariableDataModel = require("components/segmentBuilderCustomVariable/model/dataModel");
     var SegmentBuilderMultiSelect = require("components/segmentBuilderMultiSelect/view/multiSelectView");
     var AudienceSizeBarMobile = require("components/stackedBar/mobileAudience/AudienceSizeBarView");
+    var AudienceSizeBarModel = require("components/stackedBar/AudienceSizeBarModel");
+    var StackedBarView = require("components/stackedBar/StackedBarView");
+    var AudienceSizeBarModelMobile = require("components/stackedBar/mobileAudience/AudienceSizeBarModel");
     var StackedBarMobile = require("components/stackedBar/mobileAudience/StackedBarMobileView");
     var AudienceSizeBar = require("components/stackedBar/AudienceSizeBarView");
     var StackedBar = require("components/stackedBar/AudienceSizeBarView");
     var HMLBar = require("components/stackedBar/HMLBarView");
+    var HMLBarModel = require("components/stackedBar/HMLBarModel");
     var HMLStackedBar = require("components/stackedBar/HMLStackedBarView");
     var StatusDropdown = require("components/statusDropdown/StatusDropdown");
     var SubscriptionToggle = require("components/statusDropdown/subscriptionToggle");
@@ -100,28 +108,36 @@ define(function (require) {
         },
         components: {
             BehaviorChart: behaviorChart,
-            RelevancyChartView: RelevancyChartView,
+            bubbleChart: bubbleChart,
             ComboFilter: ComboFilter,
             DigitalBehaviors: DigitalBehaviors,
             Activities: Activities,
             ListItems: ListItems,
             Technographics: Technographics,
+            iconModel: iconModel,
             CrossDeviceFilterView: CrossDeviceFilterView,
             DependentModelView: DependentModelView,
             Dialog: Dialog,
             FilterManager: FilterManager,
             LocalStorage: LocalStorage,
             logoDonutChart: logoDonutChart,
-            AccordionView: AccordionView,
+            accordionView: accordionView,
             OverlayWithSectionsView: OverlayWithSectionsView,
+            OverlayWithSectionsViewDataModel: OverlayWithSectionsViewDataModel,
             SegmentBuilder: SegmentBuilder,
+            SegmentOverlayDataModel: SegmentOverlayDataModel,
             SegmentBuilderCustomVariable: SegmentBuilderCustomVariable,
+            CustomVariableDataModel: CustomVariableDataModel,
             SegmentBuilderMultiSelect: SegmentBuilderMultiSelect,
+            StackedBarView: StackedBarView,
             AudienceSizeBarMobile: AudienceSizeBarMobile,
+            AudienceSizeBarModel: AudienceSizeBarModel,
+            AudienceSizeBarModelMobile: AudienceSizeBarModelMobile,
             StackedBarMobile: StackedBarMobile,
             AudienceSizeBar: AudienceSizeBar,
             StackedBar: StackedBar,
             HMLBar: HMLBar,
+            HMLBarModel: HMLBarModel,
             HMLStackedBar: HMLStackedBar,
             StatusDropdown: StatusDropdown,
             SubscriptionToggle: SubscriptionToggle,
