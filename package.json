@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "node config/r.js -o config/build.js",
+    "build": "node config/r.js -o config/build.js && yarn build:less",
     "prebuild": "rm -rf dist",
+    "build:less": "node config/build-css.js",
     "prepare": "yarn build"
   },
   "keywords": [],
