@@ -1,10 +1,10 @@
 define(["jquery", 
         "backbone", 
-        "text-loader!components/ruleView/dataPartnerRuleTpl.html",
+        "text!components/ruleView/dataPartnerRuleTpl.html",
         "services/AccountService",
         "services/ConfigService",
         "events/EventDispatcher",
-        "components/SegmentBuilderMultiSelect",
+        "components/segmentBuilderMultiSelect/view/multiSelectView",
         "i18next",
         "services/RemoteService", "services/FeatureToggleService"],
         function($, Backbone, ruleTpl, AccountService, ConfigService, EventDispatcher, MultiSelectOverlay, i18next, RemoteService, FeatureToggleService){

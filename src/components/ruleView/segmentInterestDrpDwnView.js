@@ -3,9 +3,9 @@ define(["jquery",
         "underscore",
         "i18next",
         "services/AccountService",
-        "text-loader!components/ruleView/treeDrpDwn.html",
+        "text!components/ruleView/treeDrpDwn.html",
         "services/RemoteService",
-        "text-loader!components/ruleView/WarningTpl.html"],
+        "text!components/ruleView/WarningTpl.html"],
 		function($, Backbone, _, i18next, AccountService, treeDprDwnTpl, RemoteService, WarningTpl){
 	
 	var View = Backbone.View.extend({

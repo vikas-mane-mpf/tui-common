@@ -15,6 +15,7 @@
       jqueryUI: "empty:",
 
       "modules/audienceDiscovery/collections/RelevancyCollection": "empty:",
+      "modules/audienceIndexing/views/AudiencePerformanceIndexingComponentView": "empty:",
       "modules/audienceDiscovery/collections/DeviceBreakdownCollection": "empty:",
       "modules/audienceDiscovery/collections/CarrierBreakdownCollection": "empty:",
       "modules/tags/util/Util": "empty:",
