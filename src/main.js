@@ -30,11 +30,14 @@ define(function (require) {
     var StackedBarMobile = require("components/stackedBar/mobileAudience/StackedBarMobileView");
     var AudienceSizeBar = require("components/stackedBar/AudienceSizeBarView");
     var StackedBar = require("components/stackedBar/AudienceSizeBarView");
+    var RuleView = require("components/ruleView/RuleView");
+    var DataPartnerRuleView = require("components/ruleView/DataPartnerRuleView");
     var HMLBar = require("components/stackedBar/HMLBarView");
     var HMLBarModel = require("components/stackedBar/HMLBarModel");
     var HMLStackedBar = require("components/stackedBar/HMLStackedBarView");
     var StatusDropdown = require("components/statusDropdown/StatusDropdown");
     var SubscriptionToggle = require("components/statusDropdown/subscriptionToggle");
+    var AdvertiserStatusIconView = require("components/statusIcon/AdvertiserStatusIconView");
     var StatusIcon = require("components/statusIcon/StatusIcon");
     var URLVars = require("components/URLVars/URLVars");
 
@@ -57,6 +60,8 @@ define(function (require) {
     var TPAccountsModel = require("models/TPAccountsModel");
     var MenuConfigModel = require("models/MenuConfigModel");
     var UserModel = require("models/UserModel");
+    var ComponentConfigModel = require("models/ComponentConfigModel");
+    var RowRenderingConfigModel = require("models/RowRenderingConfigModel");
     
     var CacheService = require("services/CacheService");
     var ConfigService = require("services/ConfigService");
@@ -104,7 +109,9 @@ define(function (require) {
             ModelReportingModel : ModelReportingModel,
             TPAccountsModel : TPAccountsModel,
             MenuConfigModel : MenuConfigModel,
-            UserModel : UserModel
+            UserModel : UserModel,
+            ComponentConfigModel: ComponentConfigModel,
+            RowRenderingConfigModel: RowRenderingConfigModel
         },
         components: {
             BehaviorChart: behaviorChart,
@@ -136,12 +143,15 @@ define(function (require) {
             StackedBarMobile: StackedBarMobile,
             AudienceSizeBar: AudienceSizeBar,
             StackedBar: StackedBar,
+            DataPartnerRuleView: DataPartnerRuleView,
+            RuleView: RuleView,
             HMLBar: HMLBar,
             HMLBarModel: HMLBarModel,
             HMLStackedBar: HMLStackedBar,
             StatusDropdown: StatusDropdown,
             SubscriptionToggle: SubscriptionToggle,
             StatusIcon: StatusIcon,
+            AdvertiserStatusIconView: AdvertiserStatusIconView,
             URLVars: URLVars
         },
         services: {

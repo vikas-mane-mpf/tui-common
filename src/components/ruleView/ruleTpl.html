@@ -1,0 +1,14 @@
+<div class="clearAll">
+	<div class="fields conditions-dropdown-wrap">
+		<div data-id="componentContainer" class="component-container">
+			<div data-id="attributeSelection" class="field modal_segment modal-segment-wrap" data-type='componentParentDiv'></div>	
+		</div>
+		<div class="criteriaRemoveBtnContainer">
+			<a class="criteriaRemoveBtn" data-id="removeCriteria" ><%= i18next.t("app.deleteLink")%></a>
+		</div>
+	</div>
+	<div class="criteriaAddBtnContainer criteria-add-container">
+		<button data-id="addCriteria" class="<%= isForAdd ? 'criteriaAddBtn' : 'criteriaRemoveBtn' %>"><%= i18next.t("app.insertConditionLowercase")%></button>
+	</div>
+	<button type="button" id="find_audience_button" class="ui primary submit button"><%= i18next.t("app.goText")%></button>
+</div>

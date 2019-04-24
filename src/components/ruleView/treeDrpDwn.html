@@ -1,0 +1,69 @@
+<div class="nestableOuterDiv">
+<div class="treedrp_arow">
+	 <div id="multiselectInput" class="multiselectClick" style="margin: 12px 12px 12px 50px;">
+		<div name="tags" id="tags" class="tags" style="width:330px; line-height:19px;">SELECT ACTIVE INTEREST</div>
+	</div>
+</div>	
+
+<div class="nestableDrpDwn hideElem ovrlay">
+	<div class="treedrp_srch">
+		<input name="filterContainer" id="filterContainer" class="searchInputField" style="width: 99%;">
+			<div class="intrest_icons">
+				<ul class="intrest_icons_ul">
+					<% _.each(filterLiList, function(item, index){ %>
+						<% if(item.isActive == "true"){ %>
+							<li id="<%= item.categoryId %>" data-value="<%= item.categoryId %>" data-model="<%= item.name %>" class="activeImage unselected">
+								<img id="inActiveImages" class="darkIcon showInLineElem activeImage unselected interactionLAL" title="<%= item.name %>" src="static/img/category/<%= item.categoryId %>_gray.svg"/>
+								<img id="activeImages" class="darkIcon activeImage hideElem selected interactionLAL" title="<%= item.name %>" src="static/img/category/<%= item.categoryId %>.svg"/>
+						<% }else{ %>
+							<li id="<%= item.categoryId %>" data-value="<%= item.categoryId %>" data-model="<%= item.name %>" class="inactiveImage">
+								<img class="inactiveImage faintIcon interactionLAL" title="<%= item.name %>" src="static/img/category/<%= item.categoryId %>_gray.svg">			
+						<% } %>
+					<% }); %> 
+				</ul>
+			</div>
+		</div>
+
+	<div id="allActiveInterest">ALL ACTIVE INTERESTS | TIER 1 : (<span class="tierOneTotal"></span>)  TIER 2 : (<span class="tierTwoTotal"></span>)</div> 
+	<div class="treemenu">
+		<!-- <ul id="example"> -->
+			<!-- <% _.each(mainLiList, function(item, index){ %>
+			<% if(item.isActive == "true"){ %>
+				<% if(item.breakdown != undefined){ %>
+					<li id="<%= item.name.replace(/\s+/g,'') %>"><a id="<%= item.name.replace(/\s+/g,'') %>" class="active valueUnSelected darkIcon" data-value="<%= item.name.replace(/\s+/g,'') %>" data-model="<%= item.name %>"><img class="darkIcon unselectedimage showInLineElem circularbdr" src="static/img/category/grey<%= item.categoryId %>.png"/><img class="darkIcon selectedimage hideElem circularbdr" src="static/img/category/<%= item.categoryId %>.png"/><%= item.name %> (<%= item.breakdown.length %>)</a>
+				<% }else{ %>
+					<li id="<%= item.name.replace(/\s+/g,'') %>"><a id="<%= item.name.replace(/\s+/g,'') %>" class="active valueUnSelected darkIcon" data-value="<%= item.name.replace(/\s+/g,'') %>" data-model="<%= item.name %>"><img class="darkIcon unselectedimage showInLineElem circularbdr" src="static/img/category/grey<%= item.categoryId %>.png"/><img class="darkIcon selectedimage hideElem circularbdr" src="static/img/category/<%= item.categoryId %>.png"/><%= item.name %></a>
+				<% } %>
+			<% }else{ %>
+				<% if(item.breakdown != undefined){ %>
+					<li id="<%= item.name.replace(/\s+/g,'') %>"><a id="<%= item.name.replace(/\s+/g,'') %>" class="inActive faintIcon" data-value="<%= item.name.replace(/\s+/g,'') %>" data-model="<%= item.name %>"><img class="faintIcon" src="static/img/category/grey<%= item.categoryId %>.png"><%= item.name %> (<%= item.breakdown.length %>)</a>			
+				<% }else{ %>
+					<li id="<%= item.name.replace(/\s+/g,'') %>"><a id="<%= item.name.replace(/\s+/g,'') %>" class="inActive faintIcon" data-value="<%= item.name.replace(/\s+/g,'') %>" data-model="<%= item.name %>"><img class="faintIcon" src="static/img/category/grey<%= item.categoryId %>.png"><%= item.name %></a>
+				<% } %>
+			<% } %>
+  				<ul>
+  					<% if(item.breakdown != undefined){ %>
+  					<% _.each(item.breakdown, function(items, index){ %>
+  						<% if(items.isActive == "true"){ %>
+  							<li id="<%= items.name.replace(/\s+/g,'') %>"><a id="<%= items.name.replace(/\s+/g,'') %>" class="active valueUnSelected darkIcon circularbdr" data-value="<%= items.name.replace(/\s+/g,'') %>" data-model="<%= items.name %>"><img class="darkIcon unselectedimage showInLineElem circularbdr"  src="static/img/category/grey<%= item.categoryId%>.png"> <img class="darkIcon selectedimage hideElem circularbdr"  src="static/img/category/<%= item.categoryId %>.png"><%= items.name %></a></li>
+  						<% }else{ %>
+  							<li id="<%= items.name.replace(/\s+/g,'') %>"><a id="<%= items.name.replace(/\s+/g,'') %>" class="inActive faintIcon" data-value="<%= items.name.replace(/\s+/g,'') %>" data-model="<%= items.name %>"><img class="faintIcon"  src="static/img/category/grey<%= item.categoryId %>.png"><%= items.name %></a></li>
+  						<% } %>
+  					<% }); %>
+  					<% } %>
+  				</ul>
+			</li>
+			<% }); %> -->
+			<!-- <li><a>Other Sites</a>
+  				<ul>
+ 			 		<li><a>Accessify</a></li>
+  					<li><a>World Wide Web Consortium</a>
+  					<li><a>The W3C Markup Validator</a></li>
+  					<li><a>The W3C CSS Validator</a></li>
+  					<li><a>The Web Content Accessibility Guidelines</a></li>
+  				</ul>
+			</li> -->
+		<!-- </ul> -->
+	</div>
+	</div>
+</div>

@@ -41,6 +41,9 @@ module.exports = {
         "d3": {
             amd: "d3"
         },
+        "modules/audienceIndexing/views/AudiencePerformanceIndexingComponentView": {
+            amd: "modules/audienceIndexing/views/AudiencePerformanceIndexingComponentView"
+        },
         "modules/audienceDiscovery/collections/CarrierBreakdownCollection": {
             amd: "modules/audienceDiscovery/collections/CarrierBreakdownCollection"
         },
