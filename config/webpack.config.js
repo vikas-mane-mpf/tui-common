@@ -56,9 +56,6 @@ module.exports = {
         "modules/tags/util/Util": {
             amd: "modules/tags/util/Util"
         },
-        "modules/home/utils/utils": {
-            amd: "modules/home/utils/utils"
-        }
     },
     plugins: [new UglifyJsPlugin()],
     resolve:{

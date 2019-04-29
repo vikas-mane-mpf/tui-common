@@ -18,8 +18,7 @@
       "modules/audienceIndexing/views/AudiencePerformanceIndexingComponentView": "empty:",
       "modules/audienceDiscovery/collections/DeviceBreakdownCollection": "empty:",
       "modules/audienceDiscovery/collections/CarrierBreakdownCollection": "empty:",
-      "modules/tags/util/Util": "empty:",
-      "modules/home/utils/utils": "empty:"
+      "modules/tags/util/Util": "empty:"
   },
   include:["app"],
   out: "../dist/main.js",

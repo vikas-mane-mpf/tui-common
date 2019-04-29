@@ -9,7 +9,7 @@ define(
         "backbone",
         "numeral",
         "services/AccountService",
-        "modules/home/utils/utils",
+        "utils/Worker",
         "text!components/logoDonutChart/LogoDonutChartTpl.html",
         "components/logoDonutChart/LogoDonutChartModel",
         "components/logoDonutChart/LogoDonutChartDerivedModel",
