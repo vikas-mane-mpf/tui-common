@@ -64,6 +64,7 @@ define(function (require) {
     var RowRenderingConfigModel = require("models/RowRenderingConfigModel");
     
     var CacheService = require("services/CacheService");
+    var AnalyticService = require("services/AnalyticService");
     var ConfigService = require("services/ConfigService");
     var ErrorService = require("services/ErrorService");
     var RefDataService = require("services/RefDataService");
@@ -156,6 +157,7 @@ define(function (require) {
         },
         services: {
             AccountService: AccountService,
+            AnalyticService: AnalyticService,
             CacheService: CacheService,
             ConfigService: ConfigService,
             ErrorService: ErrorService,
