@@ -1,6 +1,6 @@
 define(["backbone"],function(Backbone){
 	var Model = Backbone.Model.extend({
-		url: "static/js/components/overlayWithSections/data/megadropdown_Final_V1.json",
+		url: "data/components/overlayWithSections/data/megadropdown_Final_V1.json",
 		
 		parse: function(resp){
 		

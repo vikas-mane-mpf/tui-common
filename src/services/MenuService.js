@@ -7,18 +7,18 @@ function(_, $, Backbone, MenuConfigModel, SecurityService, FeatureToggleService,
 		
 		initialize : function(){
 			// TODO: No use of MenuConfigModel combine in UIConstans
-			this.menuItems = new MenuConfigModel();
-			return this.menuItems.fetch();
+			// this.menuItems = new MenuConfigModel();
+			// return this.menuItems.fetch();
 			// return this.menuConfig.get("menuItems");
-			// try {
-			// 	this.menuItems = ConfigService.getConfig("constants").externalUrls.menuItems;
-			// } catch(e) {
-			// 	this.menuItems = [];
-			// }
+			try {
+				this.menuItems = ConfigService.getConfig("constants").externalUrls.menuItems;
+			} catch(e) {
+				this.menuItems = [];
+			}
 		},
 		
 		getMenuItems : function(){
-			return this.menuItems.get("menuItems");
+			return this.menuItems;
 		},
 
 		getMenuItem : function(id){

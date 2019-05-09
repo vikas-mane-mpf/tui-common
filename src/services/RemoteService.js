@@ -41,7 +41,7 @@ function(_, $, Backbone){
                     }
                 }.bind(this)
 			};
-            return $.ajax( _.extend(_.extend(_.clone(defaults), options), handlers));
+            return Backbone.ajax( _.extend(_.extend(_.clone(defaults), options), handlers));
         }
 	});
 	

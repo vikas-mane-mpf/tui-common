@@ -1,13 +1,13 @@
+var URLS = require('../urls');
+
 define( [
-	'jquery', 'backbone', 'underscore', 'models/TPAccountsModel'],
-function($, Backbone, _,TPAccountsModel) {
+	'jquery', 'backbone', 'underscore', 'models/TPAccountsModel', 'services/SecurityService'],
+function($, Backbone, _,TPAccountsModel, SecurityService) {
 	var Collection = Backbone.Collection.extend({
 
         model: TPAccountsModel,
 
         initialize: function(){},
-
-        url: "getCoreApiData.htm",
 
         parse: function(resp){
 
@@ -16,11 +16,14 @@ function($, Backbone, _,TPAccountsModel) {
 
         fetch: function(options){
             var params = {
-                type: "post",
+                type: "get",
                 cache: false,
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'json',
-                data: JSON.stringify({"entity":"accounts","operation":"list","queryString":""})
+                url: URLS.CORE_ACCOUNTS,
+                headers: {
+					Authorization: 'Bearer ' + SecurityService.token.get("access_token"),
+				},
             };
             return Backbone.Collection.prototype.fetch.apply(this, [params]);
         }

@@ -32,7 +32,7 @@ define(
                     _.each(demographic, function (subCategory, index) {
                         if (key.toLowerCase() === "gender") {
                             list += '<span class="gender-rectangle">' +
-                                '   <img src="static/js/components/consumerCluster/img/ic-'+subCategory.toLowerCase()+'.svg"/><span class="gender"> ' + subCategory + ' </span>' +
+                                '   <img src="data/components/consumerCluster/img/ic-'+subCategory.toLowerCase()+'.svg"/><span class="gender"> ' + subCategory + ' </span>' +
                                 '</span> ';
                         } else {
                             list += '<span class="cluster-tag"><span>' + subCategory + '</span></span>';

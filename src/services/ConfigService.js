@@ -75,7 +75,7 @@ function(_, $, Backbone, CacheService, RemoteService){
 		
 		fetchSegmentOverlapConfig : function(){
 			return RemoteService.ajax({
-				"url" : "getConfig.htm", 
+				"url" : "getConfig.htm",
 				"data": JSON.stringify({"type": "segmentoverlap"})
 			}).then(function(response){
 				this.setConfig("segmentOverlapConf",  response);
@@ -100,7 +100,8 @@ function(_, $, Backbone, CacheService, RemoteService){
 		
 		fetchConstantsConfig : function(){
 			return RemoteService.ajax({
-                //url : "/static/js/data/constants.json",
+				// url : "data/data/constants.json",
+				// type: "get",
 				url : "getConfig.htm",
 				data: JSON.stringify({"type": "constants"})
 			}).then(function(response){

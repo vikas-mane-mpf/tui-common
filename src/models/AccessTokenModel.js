@@ -1,4 +1,6 @@
-define(["backbone", "utils/Cookie", "moment"], function(Backbone, CookieUtil, moment){
+var URLS = require('../urls');
+
+define(["backbone", "main/utils/Cookie", "moment", "constants/AppConstant.json"], function(Backbone, CookieUtil, moment, AppConstant){
     var AccessTokenModel = Backbone.Model.extend({
 
         timeToExpiry : function(units){
@@ -18,11 +20,12 @@ define(["backbone", "utils/Cookie", "moment"], function(Backbone, CookieUtil, mo
             var config = {
                type: 'post',
                cache: false,
-               url: "newLogin.htm",
-               data: {
-                username: options.username,
+               url: URLS.LOGIN,
+               data: JSON.stringify({
+                user: options.username,
                 password: options.password
-               }
+               }),
+               contentType : 'application/json; charset=utf-8',
                // + sign in username and password change with space in request object
                // data: "username=" + options.username + "&password=" + options.password
             };
@@ -57,11 +60,13 @@ define(["backbone", "utils/Cookie", "moment"], function(Backbone, CookieUtil, mo
                contentType : 'application/json; charset=utf-8',
                dataType : 'json',
                async : true,
-               url: "getApiData.htm",
+               url: URLS.REFRESH_TOKEN,
                data: JSON.stringify({
-                    entity : "refreshToken",
-                    refreshToken : this.get("refresh_token")
-               })
+                    refresh_token : this.get("refresh_token")
+               }),
+               headers: {
+                'X-MPLATFORM-APP-ID': AppConstant.APP_ID
+               }
             };
 
            return Backbone.Model.prototype.fetch.apply(this, [config]).then(
@@ -72,14 +77,18 @@ define(["backbone", "utils/Cookie", "moment"], function(Backbone, CookieUtil, mo
         },
 
         invalidate : function(){
+            // TODO: Issue After logout fail still cookies clear
             var config = {
-               type : 'post',
+               type : 'delete',
                cache : false,
                contentType : 'application/json; charset=utf-8',
                dataType : 'json',
                async : true,
                ignore401 : true,
-               url: "logout.htm",
+               url: URLS.LOGOUT,
+               headers: {
+                'X-MPLATFORM-APP-ID': AppConstant.APP_ID
+               }
             };
 
            return Backbone.Model.prototype.fetch.apply(this, [config]).always(

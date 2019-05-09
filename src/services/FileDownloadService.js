@@ -1,3 +1,4 @@
+var CONFIG = require("config-env");
 define(["jquery","i18next","backbone",
     "services/AccountService",
     "utils/Cookie",
@@ -212,6 +213,8 @@ define(["jquery","i18next","backbone",
 			
 			downloadFile : function(url, postParam, options){
 			    options = options || {};
+
+			    url = CONFIG.INSIGHTS_API_URL + '/' + url;
 
 			    var showLoadingDialog = options.showDialog;
                 setTimeout( function(){

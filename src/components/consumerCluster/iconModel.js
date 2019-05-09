@@ -2,7 +2,7 @@ define(["jquery", "underscore", "backbone"],
     function($, _, Backbone){
         var iconModel = Backbone.Model.extend({
             mockEnabled: true,
-            mockUrl: 'static/js/components/consumerCluster/data/icon.json',
+            mockUrl: 'data/components/consumerCluster/data/icon.json',
             //liveUrl: 'getWidgetData.htm',
             initialize: function(options){
                 

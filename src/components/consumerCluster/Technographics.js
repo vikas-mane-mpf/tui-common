@@ -27,7 +27,7 @@ define(
                 var $listItems = '';
                 var iconModel = new IconModel();
                 _.each(this.model, function(item, index){
-                    $listItems += '<span class="gender-rectangle"><img src="static/js/components/consumerCluster/img/'+iconModel.formatName(item.name)+'.svg"></i><span class="gender"> ' + item.name + ' </span></span> ';
+                    $listItems += '<span class="gender-rectangle"><img src="data/components/consumerCluster/img/'+iconModel.formatName(item.name)+'.svg"></i><span class="gender"> ' + item.name + ' </span></span> ';
                 }.bind(this));
                 return $listItems;
             }

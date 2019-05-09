@@ -17,7 +17,7 @@ define(
     ){
         var LogoDonutChartModel = Backbone.Model.extend({
             mockEnabled: true,
-            mockUrl: 'static/js/components/logoDonutChart/data/newDeviceCookieData.json',
+            mockUrl: 'data/components/logoDonutChart/data/newDeviceCookieData.json',
             liveUrl: 'getWidgetData.htm',
             widgetId: 'XPIDDeviceBreakdown',
             deviceTypes: [],

@@ -140,7 +140,7 @@ define(
                                 var formatedName = iconModel.formatName(this.selectedTraits[i].name);
                                 var iconClass = formatedName;
                             }
-                            insideTag = '<img class="icon-rotate icon-rotate-img" src="static/js/components/consumerCluster/img/' + iconClass +'.svg">';
+                            insideTag = '<img class="icon-rotate icon-rotate-img" src="components/consumerCluster/img/' + iconClass +'.svg">';
                         } else {
                             insideTag = '<span class="icon-rotate icon-rotate-span">' + this.selectedTraits[i].name + '</span>';
                         }

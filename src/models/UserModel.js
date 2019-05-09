@@ -1,7 +1,7 @@
+var URLS = require('../urls');
+
 define(["backbone"], function(Backbone){
   var UserModel = Backbone.Model.extend({
-	url : 'getApiData.htm',
-
 	getDisplayName : function(){
         var parts = [this.get("first_name")];
         if(this.get("last_name")) {
@@ -11,15 +11,13 @@ define(["backbone"], function(Backbone){
     },
 
 	fetch : function(options) {
+			var userId = this.id;
 		  var params = {
-				  type: "post",
-				  data: JSON.stringify({
-					  'entity' : 'users',
-					  'userId' :this.id
-				  }),
+				  type: "get",
 				  cache: false,
 				  contentType: 'application/json; charset=utf-8',
-				  dataType: 'json'
+					dataType: 'json',
+					url: URLS.USER_DETAILS(userId)
 		  };
 		  return Backbone.Model.prototype.fetch.apply(this, [params]);
 

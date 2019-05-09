@@ -11,7 +11,6 @@ function(AccountService, ConfigService){
 		AUDIENCE_RELEVANCY : "audience_relevancy.TUI-3253",
 		ENABLE_DEMO_UI : "enable_demo_ui",
 		ENABLE_SERVER_SIDE_SEARCH : "fetch_model_db_list.MIPUI-130",
-		SEGMENT_EXPORT_FEATURE : "segment_export.MITUI-858",
 		BILLING_CODE_DATAPARTNER_FEATURE : "billing_code_datapartners.MITUI-858",
         DIGITAL_BEHAVIOR_DSP_CONFIGURATION : "digital_behavior_dsp_configurations.MIPUI-2175",
         DATA_SOURCE_GROUP_CONFIGURATION : "data_source_group.MIPUI-1648",
@@ -48,6 +47,9 @@ function(AccountService, ConfigService){
         DATA_LEDGER_SECTION: "enable_data_ledger.MIPUI-4210",
         ENABLE_FORD_LOGO: "enable_ford_logo.MIPUI-4700",
         ENABLE_IAB2: "use_iab2.MIEMS-645",
+        ENABLE_EXPORT_SEGMENTS_AUDIENCE_LAL: "enable_export_segments_audience_lal",
+        ENABLE_EXPORT_SEGMENTS_DATA_PATNER_LAL: "enable_export_segments_data_patner_lal",
+        ENABLE_EXPORT_SEGMENTS_ADVERTISER_LAL: "enable_export_segments_advertiser_lal",
 
 
 		isFeatureEnabled : function(feature){

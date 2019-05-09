@@ -26,7 +26,7 @@ define(
                     var $listItems = '<div class="ui doubling four column grid">';
                     _.each(this.model, function(item, index){
                         $listItems +=  '<div class="column digital-item">' +
-                            '   <img src="static/js/components/consumerCluster/img/'+this.icon.formatName(item.category)+'.svg" class="ic_set"><span>'+item.category+'</span>' +
+                            '   <img src="data/components/consumerCluster/img/'+this.icon.formatName(item.category)+'.svg" class="ic_set"><span>'+item.category+'</span>' +
                             '</div>';
                     }.bind(this));
                     this.$listItems +=  '</div>';

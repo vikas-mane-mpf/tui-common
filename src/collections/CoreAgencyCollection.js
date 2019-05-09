@@ -1,9 +1,10 @@
+var URLS = require('../urls');
+
 define( [
-	'jquery', 'backbone', 'underscore', 'models/AgencyModel'],
-function($, Backbone, _,AgencyModel) {
+	'jquery', 'backbone', 'underscore', 'models/AgencyModel', 'services/SecurityService'],
+function($, Backbone, _,AgencyModel, SecurityService) {
 	var Collection = Backbone.Collection.extend({
 		model : AgencyModel,
-		url: "getCoreApiData.htm",
 		
 		initialize: function(){},
 		
@@ -13,11 +14,14 @@ function($, Backbone, _,AgencyModel) {
 		
 		fetch : function(options) {
 			var params = {
-					type: "post",
+					type: "get",
 					cache: false,
 	                contentType: 'application/json; charset=utf-8',
-	                dataType: 'json',
-	                data:JSON.stringify({"entity":"agencies","operation":"list","queryString":"page=1&size=100&sort=name.asc"})
+					dataType: 'json',
+					url: URLS.CORE_AGENCIES,
+					headers: {
+						Authorization: 'Bearer ' + SecurityService.token.get("access_token"),
+					}
 			};
            
 			return Backbone.Collection.prototype.fetch.apply(this, [params]);			
@@ -25,11 +29,14 @@ function($, Backbone, _,AgencyModel) {
 
          fetchAgenciesByGeo: function(options){
             var params = {
-                type: "post",
+                type: "get",
                 cache: false,
                 contentType: 'application/json; charset=utf-8',
-                dataType: 'json',
-                data:JSON.stringify({"entity":"agencies","operation":"list", "geoId": options.geoId, "queryString":"page=1&size=100&sort=name.asc"})
+				dataType: 'json',
+				headers: {
+					Authorization: 'Bearer ' + SecurityService.token.get("access_token"),
+				},
+				url: URLS.AGENCY_BY_GEOID(options.geoId)
             };
 
             return Backbone.Collection.prototype.fetch.apply(this, [params]);
