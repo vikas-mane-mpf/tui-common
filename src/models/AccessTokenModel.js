@@ -1,6 +1,6 @@
 var URLS = require('../urls');
 
-define(["backbone", "main/utils/Cookie", "moment", "constants/AppConstant.json"], function(Backbone, CookieUtil, moment, AppConstant){
+define(["backbone", "utils/Cookie", "moment"], function(Backbone, CookieUtil, moment){
     var AccessTokenModel = Backbone.Model.extend({
 
         timeToExpiry : function(units){
@@ -65,7 +65,7 @@ define(["backbone", "main/utils/Cookie", "moment", "constants/AppConstant.json"]
                     refresh_token : this.get("refresh_token")
                }),
                headers: {
-                'X-MPLATFORM-APP-ID': AppConstant.APP_ID
+                'X-MPLATFORM-APP-ID': "minsights" // TODO: Should be at global level
                }
             };
 
