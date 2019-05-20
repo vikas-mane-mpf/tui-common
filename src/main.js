@@ -1,7 +1,7 @@
 define(function (require) {
     'use strict';
     
-    var behaviorChart = require("components/behaviorChart/behaviorChart");
+    var behaviorChart = require("components/behaviorChart/BehaviorChart");
     var bubbleChart = require("components/bubble/bubbleChart");
     var ComboFilter = require("components/comboFilter/ComboFilter");
     var DigitalBehaviors = require("components/consumerCluster/DigitalBehaviors");
